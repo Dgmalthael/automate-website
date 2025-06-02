@@ -1,0 +1,695 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgb(8, 8, 8);
+  color: rgb(219, 219, 219);
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+
+
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  /* Remove position: sticky and top: 0 from here */
+  overflow: hidden;
+  
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  z-index: 999; /* Make sure it's above other content */
+
+  position: fixed; /* This makes it always on top */
+  top: 0;        /* Stick it to the top of the viewport */
+  left: 0;       /* Align it to the left edge */
+  width: 100%;   /* Make it span the full width */
+  background-color: rgb(8, 8, 8); /* Semi-transparent background for the blur to be visible */
+  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+  -webkit-backdrop-filter: blur(10px); /* For Safari and older browsers */
+}
+
+.logo-main {
+  display: flex;
+  align-items: center;
+}
+.logo-main img {
+  margin: 0;
+  width: 100px;
+  height: 100px;
+}
+.logo-main h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+  z-index: 1000; /* Keep it high */
+  gap: 3rem;
+}
+
+nav a {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  transition: color 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+nav a:hover {
+  color: blanchedalmond;
+}
+
+.btn-main-sgn {
+  background-color: rgb(4, 4, 68);
+  color: rgb(247, 245, 245);
+  padding: 1em 2em;
+  border: none;
+  align-items: center;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  display: inline-flex; /* To align text and arrow horizontally */
+  justify-content: center; /* Center text and arrow horizontally */
+  gap: 10px;
+  position: relative;
+}
+
+.btn-main-sgn::after {
+  content: '';
+  position: absolute;
+  width: 102%;
+  height: 107%;
+  align-items: center;
+  border-radius: 50px;
+  background-image: linear-gradient(to bottom right, blue, rgb(209, 7, 209));
+  z-index: -1;
+}
+
+.btn-main-sgn:hover {
+  z-index: 0;
+  color:white;
+  box-shadow: 20px 0 50px rgb(209, 7, 209), -20px 0 50px blue;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+}
+
+.layer-blur {
+    background: linear-gradient(to right,  rgba(0, 0, 255, 0.027), rgb(209, 7, 209,0.02));
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(2px);
+    padding: 2rem;
+    border-radius: 10px;
+
+    box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+
+}
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 5rem;
+  
+}
+
+.gradient-text {
+  background: linear-gradient(to right,  blue, rgb(209, 7, 209));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+  margin-top: 0.1rem;
+  font-size: 1.1rem;
+  color: #aaa;
+}
+.highlight{
+  background: linear-gradient(to right,  #aaa, rgb(209, 7, 209));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+#elevate{
+  background: linear-gradient(to right, rgb(116, 116, 245), #aaa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+
+  
+}
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+.btn-hero-sgn {
+  background-color:rgb(4,4, 68);;
+  color: rgb(156, 151, 151);
+  padding: 0.5em 0.5em;
+  border: none;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  display: inline-flex; /* To align text and arrow horizontally */
+  justify-content: center; /* Center text and arrow horizontally */
+  margin-right: 2rem;
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+
+
+
+.btn-hero-sgn::after,
+.btn-hero-sgn::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-image: conic-gradient(from var(--angle), rgb(128, 32, 80), blue, rgb(209, 7, 209));
+  z-index: -1;
+  animation: spin 5s linear infinite;
+  padding: 2px;
+  
+}
+
+.btn-hero-sgn::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+
+
+.btn-hero-sgn:hover{
+    color:white;
+    box-shadow: 10px 0 20px rgb(209, 7, 209), -10px 0 20px blue;
+}
+
+
+
+.btn-hero-build-AI {
+  background-color:rgb(4,4, 68);;
+  color: rgb(156, 151, 151);
+  padding: 0.5em 0.5em;
+  border: none;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  display: inline-flex; /* To align text and arrow horizontally */
+  justify-content: center; /* Center text and arrow horizontally */
+  position: relative;
+}
+
+
+
+
+.btn-hero-build-AI::after,
+.btn-hero-build-AI::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-image: conic-gradient(from var(--angle), rgb(128, 32, 80), blue, rgb(209, 7, 209));
+  z-index: -1;
+  animation: spin 5s linear infinite;
+  padding: 2px;
+}
+
+.btn-hero-build-AI::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+
+
+.btn-hero-build-AI:hover{
+    color:white;
+    box-shadow: 10px 0 20px rgb(209, 7, 209), -10px 0 20px blue;
+
+}
+
+
+
+#conteiner3D {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;     /* Full width of viewport */
+  height: 100vh;    /* Full height of viewport */
+  z-index: -2;      /* Keep it behind other content, adjust as needed */
+  pointer-events: none; /* So it doesn’t block clicks */
+}
+
+.product-examples {  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  overflow-x: visible; /* <-- was hidden, now visible so scroll can occur */
+}
+
+
+
+.btn-learn-more {
+  background-color:rgb(4,4, 68);;
+  color: rgb(156, 151, 151);
+  padding: 0.5em 0.5em;
+  border: none;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  display: inline-flex; /* To align text and arrow horizontally */
+  justify-content: center; /* Center text and arrow horizontally */
+  margin-right: 2rem;
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+.btn-learn-more::after,
+.btn-learn-more:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-image: conic-gradient(from var(--angle), rgb(128, 32, 80), blue, rgb(209, 7, 209));
+  z-index: -1;
+  animation: spin 5s linear infinite;
+  padding: 2px;
+}
+
+.btn-learn-more::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+
+
+.btn-learn-more:hover{
+    color:white;
+    box-shadow: 10px 0 20px rgb(209, 7, 209), -10px 0 20px blue;
+
+}
+
+.product-examples h1 {
+  font-size: 3rem;
+  background-image: conic-gradient(from var(--angle), rgb(128, 32, 80), blue, rgb(209, 7, 209));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}  
+
+.product-cards {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 5rem;
+  scroll-behavior: smooth;
+  cursor: grab;
+  width: 100%;
+}
+
+.product-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.product-image{
+  width: 8rem;
+  height: 8rem;
+  
+  border-radius: 10px;
+}
+.product-cards, .product-card {
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none;     /* IE/Edge */
+}
+
+.product-card {
+  width: 30rem;
+  height: 10rem;
+  padding: 1rem;
+  background: linear-gradient(to right, rgba(0, 0, 255, 0.027), rgba(209, 7, 209, 0.02));
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+  cursor: grab;
+  flex-shrink: 0;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  display: flex;
+  
+  align-items: space-between;
+}
+
+.card-learn-more { 
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: none;
+  color: antiquewhite;
+  background-color: rgb(247, 245, 245, 0.2);
+  cursor: pointer;
+
+
+}
+.product-card:hover .card-learn-more {
+  box-shadow: 0 0 15px 5px rgba(138, 43, 226, 0.6); /* violet glow */
+  transform: scale(1.02); /* optional zoom */
+  background-color: rgba(247, 245, 245, 0.651);
+}
+.product-card:hover  {
+  box-shadow: 0 0 15px 5px rgba(138, 43, 226, 0.6); /* violet glow */
+  transform: scale(1.02); /* optional zoom */
+}
+
+.about-section{
+  width: 100%;
+  height: 100%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-section h1 {
+  font-size: 3rem;
+  background-image: conic-gradient(from var(--angle), rgb(128, 32, 80), blue, rgb(209, 7, 209));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  
+}
+.img-box {
+  width: 360px;
+  height: 720px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5rem;
+}
+.img-box img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+.product-intro {
+
+  display: flex;
+  flex-direction: column;
+  position:relative;
+  width: 70%;
+  margin-top:3rem;
+
+}
+
+.item-cards {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 80%;
+  height: 100%;
+  margin-top: 10rem;
+  gap:3rem;
+  margin-left: 10rem;
+
+}
+
+.item-intro h1 {
+  position: absolute;
+  font-size: 4rem;
+  top:10px;
+  left:5%;
+}
+.item-intro p {
+  position: absolute;
+  font-size: 2rem;
+  top:125px;
+  left:7%;
+}
+
+
+.item-intro {
+  position: relative;
+  width: auto;
+  height: 40vh;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid rgb(0, 4, 219) ;
+  transition:0.5;
+
+}
+.item-intro img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.item-intro:nth-child(1){
+  grid-column: span 2;
+}
+
+.contact-us {
+  margin: auto;
+  height: 50rem;
+  width: 60rem;
+ 
+  
+}
+.contact-container  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  background: linear-gradient(to right, rgba(11, 11, 226, 0.05), rgba(224, 9, 224, 0.05));
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+  flex-shrink: 0;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  
+}
+
+#contact-form {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:1rem;
+}
+
+.contact-info {
+  width: 20rem;
+  height: 2rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  padding-left: 25px;
+  font-weight: 500;
+  background-color:rgba(247, 241, 233, 0.8);
+  font-style: italic;
+  color: rgb(27, 24, 27);
+}
+
+.contact-info:focus {
+  border: 2px solid rgba(138, 43, 226);
+
+}
+
+.contact-info:nth-child(4){
+  width: 20rem;
+  height: 10rem;
+  padding-top: 10px;
+}
+.form-response {
+  background-color:rgb(4,4, 68);;
+  color: rgb(156, 151, 151);
+  padding: 0.5em 0.5em;
+  border: none;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  display: inline-flex; /* To align text and arrow horizontally */
+  justify-content: center; /* Center text and arrow horizontally */
+  margin-right: 2rem;
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+.form-response::after,
+.form-response:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-image: conic-gradient(from var(--angle), rgb(128, 32, 80), blue, rgb(209, 7, 209));
+  z-index: -1;
+  animation: spin 5s linear infinite;
+  padding: 2px;
+}
+
+.form-response::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+
+
+.form-response:hover{
+    color:white;
+    box-shadow: 10px 0 20px rgb(209, 7, 209), -10px 0 20px blue;
+
+}
+
+
+.bottom {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center ;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+}
+
+
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+  z-index: 1000; /* Keep it high */
+  gap: 3rem;
+}
+.list a{
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  transition: color 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.list a:hover {
+  color: blanchedalmond;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*blur effect */
+.autoBlur{
+  animation: autoBlurAnimation linear both;
+  animation-timeline: view();
+
+}
+
+@keyframes autoBlurAnimation {
+  0%{
+    filter:blur(40px);
+
+
+  }
+  30%,60%{
+    filter:blur(0);
+    transform: translateY(0px);
+    opacity:1;
+
+  }
+  100%{
+    filter:blur(40);
+    transform: translateY(-200px);
+    opacity:0;
+  }
+}
+/* take full  */
+.autoTakeFull{
+  animation: autoTakeFullAnimation both;
+  animation-timeline: view(70% 60%);
+
+}
+
+@keyframes autoTakeFullAnimation {
+  to {
+    width: 100%;
+    height: 100vp;
+    border-radius: 0;
+    margin-bottom: 100px;
+  }
+}
