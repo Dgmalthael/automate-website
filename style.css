@@ -1198,6 +1198,14 @@ nav a.nav-active {
   animation: autoBlurAnimation linear both;
   animation-timeline: view();
 }
+@media (max-width: 900px) {
+  .autoBlur {
+    animation: none;
+    filter: none;
+    opacity: 1;
+    transform: none;
+  }
+}
 @keyframes autoBlurAnimation {
   0%   { filter: blur(40px); opacity: 0; transform: translateY(30px); }
   25%, 65% { filter: blur(0); opacity: 1; transform: translateY(0); }
