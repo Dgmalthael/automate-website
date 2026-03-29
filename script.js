@@ -1,5 +1,6 @@
 import * as THREE from 'https://cdn.skypack.dev/three@0.129.0/build/three.module.js';
 import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js';
+import { DRACOLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/DRACOLoader.js';
 import { gsap } from 'https://cdn.skypack.dev/gsap';
 
 /* ══════════════════════════════════════
@@ -11,8 +12,11 @@ camera.position.z = 30;
 const scene = new THREE.Scene();
 let bee, mixer;
 
+const dracoLoader = new DRACOLoader();
+dracoLoader.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.5.6/');
 const loader = new GLTFLoader();
-loader.load('/particle_wave.glb',
+loader.setDRACOLoader(dracoLoader);
+loader.load('/particle_wave_compressed.glb',
   (gltf) => {
     bee = gltf.scene;
     scene.add(bee);
