@@ -3,36 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Automate</title>
+  <title>Blog — Automate</title>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script type="importmap">
-{
-  "imports": {
-    "three": "https://cdn.jsdelivr.net/npm/three@v0.175.0/build/three.module.js",
-    "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.175.0/examples/jsm/"
-  }
-}
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@v0.175.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.175.0/examples/jsm/" } }
   </script>
-
 </head>
 <body>
-  <div id="conteiner3D"> </div>
-  
+  <div id="conteiner3D"></div>
+
+  <!-- HEADER -->
   <div class="container">
     <header>
-      <div class="logo-main">
-        <img src="/possible+pictures/logo/logo3.png" alt="/possible+pictures/logo/logo.png">
+      <a href="index.html" class="link-reset logo-main">
+        <img src="/possible+pictures/logo/logo3.png" alt="Automate Logo">
         <h1 class="logo">Automate</h1>
-      </div>
+      </a>
       <nav>
         <a href="products.html">Products</a>
-        <a href="blog.html">Blog</a>
+        <a href="blog.html" class="nav-active">Blog</a>
         <a href="about.html">About</a>
+        <a href="index.html#contact" class="nav-cta-mobile">Book a Demo →</a>
       </nav>
-    
-    <button class="btn-main-sgn">Book a Demo
-      <span class="arrow">→</span></button>
-    </button>
+      <a href="index.html#contact" class="link-reset nav-cta-desktop">
+        <button class="btn-main-sgn">Book a Demo <span class="arrow">→</span></button>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </header>
   </div>
+
+  <!-- BLOG HERO -->
+  <section class="page-hero autoBlur">
+    <div class="page-hero-content">
+      <div class="section-label"><span class="mono-tag">// INSIGHTS & GUIDES</span></div>
+      <h1>The <span class="gradient-text">Automate</span> Blog</h1>
+      <p>Practical guides, breakdowns, and honest perspectives on AI automation</p>
+    </div>
+  </section>
+
+
+
+  <!-- FILTER BAR -->
+  <section class="blog-filters autoBlur">
+    <div class="filter-bar">
+      <button class="filter-btn filter-active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="generative-ai">Generative AI</button>
+      <button class="filter-btn" data-filter="automation">Automation</button>
+      <button class="filter-btn" data-filter="guides">Guides</button>
+      <button class="filter-btn" data-filter="industry">Industry</button>
+    </div>
+  </section>
+
+  <!-- ARTICLE GRID -->
+  <section class="blog-grid-section autoBlur" id="articles">
+    <div class="blog-grid" id="blog-grid">
+
+     
+
+    </div>
+  </section>
+
+  <!-- NEWSLETTER / NOTIFY -->
+  <section class="newsletter-section autoBlur">
+    <div class="newsletter-box">
+      <div class="section-label" style="margin-bottom:0.75rem"><span class="mono-tag">// STAY IN THE LOOP</span></div>
+      <h2>Get new articles <span class="gradient-text">delivered.</span></h2>
+      <p>Practical AI automation insights — no noise, no spam. Just useful content when it's published.</p>
+      <form class="newsletter-form" id="newsletter-form"
+            action="https://script.google.com/macros/s/AKfycbwxsoDf2PAlgyDQ-khyeJyQm9h24CQYNUzliQ7zP9giIWdlTJo6onARhT35tnd-5HiE3Q/exec"
+            method="POST">
+        <input type="hidden" name="type" value="newsletter">
+        <input type="email" class="newsletter-input" name="email" placeholder="your@email.com" required />
+        <button type="submit" class="btn-item">Subscribe <span class="arrow">→</span></button>
+      </form>
+      <div id="newsletter-popup" class="popup"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bottom">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h2 class="logo">Automate</h2>
+        <p>Custom AI automation for ambitious businesses.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <span class="footer-col-title">Solutions</span>
+          <a href="products.html">All Products</a>
+          <a href="products.html#content">Content &amp; Media</a>
+          <a href="products.html#intelligence">Intelligence &amp; Security</a>
+          <a href="products.html#operations">Operations &amp; Finance</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-title">Company</span>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-title">Legal</span>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© Automate 2025. All rights reserved.</p>
+      <div class="Social">
+        <a href="#" aria-label="YouTube"><i class='bx bxl-youtube' style='color:#d107d1'></i></a>
+        <a href="#" aria-label="LinkedIn"><i class='bx bxl-linkedin-square' style='color:#d107d1'></i></a>
+        <a href="#" aria-label="GitHub"><i class='bx bxl-github' style='color:#d107d1'></i></a>
+        <a href="#" aria-label="Instagram"><i class='bx bxl-instagram' style='color:#d107d1'></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+  <script src="cms.js"></script>
+</body>
+</html>

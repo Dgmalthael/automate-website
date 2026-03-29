@@ -3,36 +3,205 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Automate</title>
+  <title>About — Automate</title>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script type="importmap">
-{
-  "imports": {
-    "three": "https://cdn.jsdelivr.net/npm/three@v0.175.0/build/three.module.js",
-    "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.175.0/examples/jsm/"
-  }
-}
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@v0.175.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.175.0/examples/jsm/" } }
   </script>
-
 </head>
 <body>
-  <div id="conteiner3D"> </div>
-  
+  <div id="conteiner3D"></div>
+
+  <!-- HEADER -->
   <div class="container">
     <header>
-      <div class="logo-main">
-        <img src="/possible+pictures/logo/logo3.png" alt="/possible+pictures/logo/logo.png">
+      <a href="index.html" class="link-reset logo-main">
+        <img src="/possible+pictures/logo/logo3.png" alt="Automate Logo">
         <h1 class="logo">Automate</h1>
-      </div>
+      </a>
       <nav>
         <a href="products.html">Products</a>
         <a href="blog.html">Blog</a>
-        <a href="about.html">About</a>
+        <a href="about.html" class="nav-active">About</a>
+        <a href="index.html#contact" class="nav-cta-mobile">Book a Demo →</a>
       </nav>
-    
-    <button class="btn-main-sgn">Book a Demo
-      <span class="arrow">→</span></button>
-    </button>
+      <a href="index.html#contact" class="link-reset nav-cta-desktop">
+        <button class="btn-main-sgn">Book a Demo <span class="arrow">→</span></button>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </header>
   </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero autoBlur">
+    <div class="page-hero-content">
+      <div class="section-label"><span class="mono-tag">// WHO WE ARE</span></div>
+      <h1>Built to Make AI<br><span class="gradient-text">Accessible to Every Business</span></h1>
+      <p>Automate was founded on a simple belief: powerful AI automation shouldn't be reserved<br>for large enterprises with big budgets. Every business deserves access to tools that save time,<br>reduce costs, and unlock real competitive advantage.</p>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="mission-section autoBlur">
+    <div class="mission-split">
+      <div class="mission-left">
+        <div class="section-label"><span class="mono-tag">// OUR MISSION</span></div>
+        <h2>Revolutionizing daily routines with automation that <span class="gradient-text">actually fits your reality.</span></h2>
+      </div>
+      <div class="mission-right">
+        <p>We're building the infrastructure layer for the intelligent small and mid-sized enterprise. Our mission is to deliver effortless efficiency — transforming how organizations work, create, and compete — without forcing them into rigid packages or unnecessary complexity.</p>
+        <p>By simplifying complex tasks, we free your most valuable resource: human attention. Our solutions are designed to integrate naturally into your day — not disrupt it. We make advanced automation approachable, putting powerful tools at your fingertips so your team can move faster, smarter, and with greater precision.</p>
+        <p>Every proposal we make is based on a real understanding of your business. Every price we quote reflects the actual scope of your project. No surprises.</p>
+        <a href="index.html#contact" class="link-reset"><button class="btn-learn-more" style="margin-top:2rem">Start the Conversation →</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER -->
+  <section class="founder-section autoBlur">
+    <div class="section-label"><span class="mono-tag">// THE FOUNDER</span></div>
+    <h2 class="section-title-grad">Behind Automate</h2>
+    <div class="founder-card">
+      <div class="founder-avatar gradient-text">UDG</div>
+      <div class="founder-info">
+        <h3>U. Deniz GELES</h3>
+        <span class="mono-tag founder-title">Founder &amp; AI Automation Engineer</span>
+        <p>
+          Automate is a focused, founder-led practice. As the sole engineer and strategist behind every project, U. Deniz GELES brings end-to-end ownership to each engagement — from the initial analysis through to deployment and handover.
+        </p>
+        <p>
+          This structure is intentional. It means you work directly with the person who understands your system, designs your solution, and builds it. No account managers, no handoffs, no communication gaps.
+        </p>
+        <p>
+          With a deep background in AI systems, automation architecture, and practical business software, Deniz founded Automate to bring genuinely useful AI solutions to businesses that are ready to move forward — but don't know where to start.
+        </p>
+        <div class="founder-links">
+          <a href="index.html#contact" class="link-reset"><button class="btn-learn-more">Work with Deniz →</button></a>
+          <a href="blog.html" class="btn-item" style="margin-left:1rem">Read the Blog →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="values-section autoBlur">
+    <div class="section-label"><span class="mono-tag">// PRINCIPLES</span></div>
+    <h2 class="section-title-grad">How We Work</h2>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon"><i class='bx bx-analyse'></i></div>
+        <h3>Understand First</h3>
+        <p>We never propose a solution before we understand the problem. The analysis phase exists for a reason — rushing it costs everyone time and money.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon"><i class='bx bx-receipt'></i></div>
+        <h3>Transparent Pricing</h3>
+        <p>One fixed fee to analyze your system. Then a clear, itemized proposal for the build. You know exactly what you're paying for and why — always.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon"><i class='bx bx-user-check'></i></div>
+        <h3>Direct Ownership</h3>
+        <p>You work with the person building your system. No middlemen. No delegation. Decisions are made quickly because communication is direct.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon"><i class='bx bx-shield-quarter'></i></div>
+        <h3>Built to Last</h3>
+        <p>Every solution is documented, tested, and handed over so you can own and operate it independently. We don't build systems that keep you dependent on us.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section class="approach-section autoBlur">
+    <div class="approach-inner">
+      <div class="section-label"><span class="mono-tag">// OUR APPROACH TO PRICING</span></div>
+      <h2>No Packages. No Tiers. <span class="gradient-text">Just the Right Price.</span></h2>
+      <div class="approach-body">
+        <div class="approach-step">
+          <div class="approach-num mono-tag">Step 1</div>
+          <div class="approach-text">
+            <h4>Free Discovery Call</h4>
+            <p>We start with a free conversation to understand your business, your goals, and whether automation is the right move for you right now. No pressure, no pitch.</p>
+          </div>
+        </div>
+        <div class="approach-step">
+          <div class="approach-num mono-tag">Step 2</div>
+          <div class="approach-text">
+            <h4>One-Time Analysis Fee</h4>
+            <p>If we decide to move forward, you pay a single flat fee for a deep-dive analysis of your systems and workflows. This is the foundation that makes everything else precise and honest.</p>
+          </div>
+        </div>
+        <div class="approach-step">
+          <div class="approach-num mono-tag">Step 3</div>
+          <div class="approach-text">
+            <h4>Custom Project Proposal</h4>
+            <p>Based on the analysis, you receive a fully scoped proposal with a price built around your project's actual size, complexity, and requirements. Not a price list. A real quote.</p>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:3rem;">
+        <a href="index.html#contact" class="link-reset"><button class="btn-hero-sgn">Book Your Free Discovery Call</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="about-cta autoBlur">
+    <div class="cta-box">
+      <h2>Ready to automate your business?</h2>
+      <p>The first step is just a conversation. No commitment, no sales deck — just an honest look at how automation can help you.</p>
+      <div class="cta-btns">
+        <a href="index.html#contact" class="link-reset"><button class="btn-hero-sgn">Get in Touch</button></a>
+        <a href="products.html" class="link-reset"><button class="btn-hero-build-AI">See What We Build ↗</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bottom">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h2 class="logo">Automate</h2>
+        <p>Custom AI automation for ambitious businesses.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <span class="footer-col-title">Solutions</span>
+          <a href="products.html">All Products</a>
+          <a href="products.html#content">Content &amp; Media</a>
+          <a href="products.html#intelligence">Intelligence &amp; Security</a>
+          <a href="products.html#operations">Operations &amp; Finance</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-title">Company</span>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-title">Legal</span>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© Automate 2025. All rights reserved.</p>
+      <div class="Social">
+        <a href="#" aria-label="YouTube"><i class='bx bxl-youtube' style='color:#d107d1'></i></a>
+        <a href="#" aria-label="LinkedIn"><i class='bx bxl-linkedin-square' style='color:#d107d1'></i></a>
+        <a href="#" aria-label="GitHub"><i class='bx bxl-github' style='color:#d107d1'></i></a>
+        <a href="#" aria-label="Instagram"><i class='bx bxl-instagram' style='color:#d107d1'></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

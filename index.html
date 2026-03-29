@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Automate</title>
+  <title>Automate — Simplify Complexity</title>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script type="importmap">
+   <script type="importmap">
 {
   "imports": {
     "three": "https://cdn.jsdelivr.net/npm/three@v0.175.0/build/three.module.js",
@@ -17,187 +20,282 @@
 
 </head>
 <body>
-  <div id="conteiner3D"> </div>
-  
+  <div id="conteiner3D"></div>
+
+  <!-- HEADER -->
   <div class="container">
     <header>
-      <div class="logo-main">
-        <img src="/possible+pictures/logo/logo3.png" alt="/possible+pictures/logo/logo.png">
+      <a href="index.html" class="link-reset logo-main">
+        <img src="/possible+pictures/logo/logo3.png" alt="Automate Logo">
         <h1 class="logo">Automate</h1>
-      </div>
+      </a>
       <nav>
         <a href="products.html">Products</a>
         <a href="blog.html">Blog</a>
         <a href="about.html">About</a>
+        <a href="#contact" class="nav-cta-mobile">Book a Demo →</a>
       </nav>
-    
-    <button class="btn-main-sgn">Book a Demo
-      <span class="arrow">→</span></button>
-    </button>
+      <a href="#contact" class="link-reset nav-cta-desktop">
+        <button class="btn-main-sgn">Book a Demo <span class="arrow">→</span></button>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </header>
   </div>
+
+  <!-- HERO -->
   <section class="hero autoBlur">
     <div class="layer-blur">
-        <div class="hero-content">
-        <h1><span class="gradient-text">Simplify Complexity </span>
-            </h1>
+      <div class="hero-content">
+        <div class="hero-tag"><span class="dot"></span> AI-Powered Business Automation</div>
+        <h1><span class="gradient-text">Simplify Complexity</span></h1>
         <p>
-            <span id="elevate">Elevate</span> your organizational performance <p> achieve unprecedented levels of efficiency by <span class="highlight">Automate</span> </p> </p>
-        
-        <button class="btn-hero-sgn">Book a Demo</button>
-        <button class="btn-hero-build-AI">Build AI</button>
-        
-        
+          <span id="elevate">Elevate</span> your organizational performance —<br>
+          achieve unprecedented efficiency with <span class="highlight">Automate</span>
+        </p>
+        <div class="hero-btns">
+          <a href="#contact" class="link-reset"><button class="btn-hero-sgn">Book a Free Call</button></a>
+          <a href="products.html" class="link-reset"><button class="btn-hero-build-AI">Explore Solutions ↗</button></a>
         </div>
+      </div>
     </div>
-    
-    
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-line"></div>
+    </div>
   </section>
 
+  <!-- WHAT WE DO -->
+  <section class="what-we-do autoBlur">
+    <div class="section-label"><span class="mono-tag">// WHAT WE DO</span></div>
+    <h2 class="section-title-grad">Custom AI Automation,<br>Built Around Your Business</h2>
+    <p class="section-sub">
+      Every business is different. We start by understanding your workflows in depth — then design and build automation that fits exactly what you need, at a price that reflects exactly what that takes.
+    </p>
+    <div class="pillars-grid">
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class='bx bx-search-alt-2'></i></div>
+        <h3>System Analysis</h3>
+        <p>We map your existing processes and workflows to find where automation will have the greatest real-world impact on your operations.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class='bx bx-layer'></i></div>
+        <h3>Custom Solution Design</h3>
+        <p>Based on the analysis, we design a tailored automation architecture — no off-the-shelf packages, no bloated features you'll never use.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class='bx bx-rocket'></i></div>
+        <h3>Build &amp; Deploy</h3>
+        <p>We build, test, and integrate the solution into your environment with zero disruption to your ongoing operations.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class='bx bx-refresh'></i></div>
+        <h3>Continuous Improvement</h3>
+        <p>AI systems get smarter with data. We build yours to improve continuously — adapting to your growth and changing needs over time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works autoBlur">
+    <div class="section-label"><span class="mono-tag">// OUR PROCESS</span></div>
+    <h2 class="section-title-grad">How It Works</h2>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number mono-tag">01</div>
+        <h3>Book a Free Call</h3>
+        <p>Tell us about your business and the challenges you're facing. No commitment — just an open conversation to see if we're the right fit.</p>
+      </div>
+      <div class="step-connector">→</div>
+      <div class="step-card">
+        <div class="step-number mono-tag">02</div>
+        <h3>Workflow Analysis</h3>
+        <p>For a one-time flat fee, we conduct a thorough analysis of your systems and workflows — identifying the best automation opportunities and full project scope.</p>
+      </div>
+      <div class="step-connector">→</div>
+      <div class="step-card">
+        <div class="step-number mono-tag">03</div>
+        <h3>Custom Proposal</h3>
+        <p>You receive a detailed, transparent proposal priced specifically for your project's scale and complexity. No packages. No hidden fees.</p>
+      </div>
+      <div class="step-connector">→</div>
+      <div class="step-card">
+        <div class="step-number mono-tag">04</div>
+        <h3>Build &amp; Deliver</h3>
+        <p>We build, test, and hand over your solution. You own it fully — and we make sure you understand exactly how it works.</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:3rem;">
+      <a href="#contact" class="link-reset"><button class="btn-learn-more">Start With a Free Call →</button></a>
+    </div>
+  </section>
+
+  <!-- SOLUTIONS OVERVIEW -->
   <section class="product-examples autoBlur">
-    <h1>Company Evolution</h1>
-    <p>Evaluate your company’s performance and compare it with other companies all around the world. 
-      <p>See the areas that can be robustly done.</p>
-     </p>
-    <button class="btn-learn-more">Learn More</button>
+    <div class="section-label"><span class="mono-tag">// SOLUTIONS</span></div>
+    <h1>What We Can Automate</h1>
+    <p class="section-sub">From content and customer interactions to finance and security —<br>if it's repetitive, rule-based, or data-driven, it can be automated.</p>
+    <a href="products.html" class="link-reset"><button class="btn-learn-more">View All Solutions</button></a>
     <div class="product-cards">
-      <div class="product-card" id="product-card">
-        <img src="/possible+pictures/Podcast-1.png" class="product-image"></img>
+      <div class="product-card">
+        <img src="/possible+pictures/Podcast-1.png" class="product-image" alt="Podcast Generation">
         <div class="product-intro-card">
-          <h3>Podcast generation</h3>
-          <p> Create engaging audio content by developing scripts, recording episodes</p>
+          <h3>Podcast Generation</h3>
+          <p>Script creation, AI voice synthesis, and automated publishing pipelines.</p>
         </div>
-        <button class="card-learn-more">↬</button>
+        <a href="products.html#content" class="link-reset"><button class="card-learn-more">↬</button></a>
       </div>
-      <div class="product-card" id="product-card">
-        <img src="/possible+pictures/socialmedia-managment.png" class="product-image"></img>
+      <div class="product-card">
+        <img src="/possible+pictures/socialmedia-managment.png" class="product-image" alt="Social Media">
         <div class="product-intro-card">
-          <h3>Social media management </h3>
-          <p> Create engaging audio content by developing scripts, recording episodes, editing audio</p>
+          <h3>Social Media Management</h3>
+          <p>Content generation, scheduling, and cross-platform analytics — fully automated.</p>
         </div>
-        <button class="card-learn-more">↬</button>
+        <a href="products.html#content" class="link-reset"><button class="card-learn-more">↬</button></a>
       </div>
-      <div class="product-card" id="product-card">
-        <img src="/possible+pictures/AI-chatbot.png" class="product-image"></img>
+      <div class="product-card">
+        <img src="/possible+pictures/AI-chatbot.png" class="product-image" alt="AI Chatbots">
         <div class="product-intro-card">
-          <h3>Chat-bots</h3>
-          <p> Create engaging audio content by developing scripts, recording episodes, editing audio</p>
+          <h3>AI Chatbots</h3>
+          <p>Intelligent conversational agents trained on your business data and brand voice.</p>
         </div>
-        <button class="card-learn-more">↬</button>
+        <a href="products.html#intelligence" class="link-reset"><button class="card-learn-more">↬</button></a>
       </div>
-      <div class="product-card" id="product-card">
-        <img src="/possible+pictures/AI-tradebot.png" class="product-image"></img>
+      <div class="product-card">
+        <img src="/possible+pictures/AI-tradebot.png" class="product-image" alt="AI Trading">
         <div class="product-intro-card">
           <h3>AI-Powered Trading</h3>
-          <p> Create engaging audio content by developing scripts, recording episodes, editing audio</p>
+          <p>Quantitative strategy automation with real-time market signal processing.</p>
         </div>
-        <button class="card-learn-more">↬</button>
+        <a href="products.html#operations" class="link-reset"><button class="card-learn-more">↬</button></a>
       </div>
-      <div class="product-card" id="product-card">
-        <img src="/possible+pictures/inventory-managment.png" class="product-image"></img>
+      <div class="product-card">
+        <img src="/possible+pictures/inventory-managment.png" class="product-image" alt="Inventory">
         <div class="product-intro-card">
-          <h3>Inventory Management </h3>
-          <p> Create engaging audio content by developing scripts, recording episodes, editing audio</p>
+          <h3>Inventory Management</h3>
+          <p>Demand forecasting, automated reordering, and supplier risk analysis.</p>
         </div>
-        <button class="card-learn-more">↬</button>
+        <a href="products.html#operations" class="link-reset"><button class="card-learn-more">↬</button></a>
       </div>
-      <div class="product-card" id="product-card">
-        <img src="/possible+pictures/fraud.png" class="product-image"></img>
+      <div class="product-card">
+        <img src="/possible+pictures/fraud.png" class="product-image" alt="Fraud Detection">
         <div class="product-intro-card">
           <h3>Fraud Detection</h3>
-          <p> Create engaging audio content by developing scripts, recording episodes, editing audio</p>
+          <p>Real-time anomaly detection that catches fraud patterns before damage is done.</p>
         </div>
-        <button class="card-learn-more">↬</button>
+        <a href="products.html#intelligence" class="link-reset"><button class="card-learn-more">↬</button></a>
       </div>
-      <div class="product-card" id="product-card">
-        <img src="/possible+pictures/text-generation.png" class="product-image"></img>
+      <div class="product-card">
+        <img src="/possible+pictures/text-generation.png" class="product-image" alt="Image Generation">
         <div class="product-intro-card">
-          <h3>Picture generation</h3>
-          <p> Create engaging audio content by developing scripts, recording episodes, editing audio</p>
+          <h3>Image Generation</h3>
+          <p>On-demand brand-aligned visuals, banners, and creative assets at scale.</p>
         </div>
-        <button class="card-learn-more">↬</button>
+        <a href="products.html#content" class="link-reset"><button class="card-learn-more">↬</button></a>
       </div>
-      <div class="product-card" id="product-card">
-        <img src="/possible+pictures/trarget-detection.png" class="product-image"></img>
+      <div class="product-card">
+        <img src="/possible+pictures/trarget-detection.png" class="product-image" alt="Threat Detection">
         <div class="product-intro-card">
           <h3>Threat Detection</h3>
-          <p> Create engaging audio content by developing scripts, recording episodes, editing audio</p>
+          <p>Continuous behavioral and network monitoring with automated incident response.</p>
         </div>
-        <button class="card-learn-more">↬</button>
+        <a href="products.html#intelligence" class="link-reset"><button class="card-learn-more">↬</button></a>
       </div>
-      
     </div>
-
   </section>
 
+  <!-- EXPLORE SECTIONS -->
   <section class="products-intro autoBlur">
-
     <div class="item-cards">
-    <div class="item-intro">
-      <h1>Our Courses</h1>
-      <p>Explanations and types</p>
-      
-      
-    </div>
-
-    <div class="item-intro">
-      <h1>Generative AI</h1>
-      <p>Explanations and types</p>
-      
-      
-    </div>
-    <div class="item-intro">
-      <h1>SMART Decision Making</h1>
-      <p>Explanations and types</p>
-      
-      
-    </div>
-    <div class="item-intro">
-      <h1>Blog</h1>
-      <p>Our blog</p>
-      <div class="articles">
-        <span>latest articles</span>
+      <div class="item-intro item-courses">
+        <div class="item-text">
+          <h2>Our Solutions</h2>
+          <p>The full range of automation capabilities we design and build for your business.</p>
+          <a href="products.html" class="btn-item">Explore →</a>
+        </div>
       </div>
-      
+      <div class="item-intro item-genai">
+        <div class="item-text">
+          <h2>Generative AI</h2>
+          <p>Content, visuals, and voice — generative pipelines built for real production use.</p>
+          <a href="products.html#content" class="btn-item">Learn More →</a>
+        </div>
+      </div>
+      <div class="item-intro item-smart">
+        <div class="item-text">
+          <h2>Decision Intelligence</h2>
+          <p>AI that turns your raw data into clear, actionable business decisions — automatically.</p>
+          <a href="products.html#intelligence" class="btn-item">Discover →</a>
+        </div>
+      </div>
+      <div class="item-intro item-blog">
+        <div class="item-text">
+          <h2>Blog</h2>
+          <p>Practical guides and insights on AI automation — written by the founder.</p>
+          <a href="blog.html" class="btn-item">Read Articles →</a>
+        </div>
+      </div>
     </div>
-    </div>
-
   </section>
 
-  <section class="contact-us autoBlur">
-     <div class="contact-container">
-      <h1>Contact Us</h1>
-      <form id="contact-form" action="https://script.google.com/macros/s/AKfycbxjCUDUXLSqTFsGTdcDAgoAO7Yhh11PmDl5sK1wBvH9Fany13xGXX8hX2k2GU5Wzrjkcg/exec" method="POST">
-      <input class="contact-info" type="text" id="name" placeholder="Name" name="name" required />
-      <input class="contact-info" placeholder="Email" type="email" id="email" name="email" required />
-      <input class="contact-info" placeholder="Phone" id="number" name="number" required />
-      <textarea class="contact-info" placeholder="your message" id="message" name="message" rows="5" required></textarea>
-      <button class="form-response" type="submit">Send</button>
-    </form>
-    <div id="popupMessage" class="popup"></div>
-
-  </div>
-  </section>
-  
-  <section class="bottom">
-      <section class="bottom">
-    <p> © Automate 2025. All rights reserved </p>
-
-    <div class="list">
-      <a href="#">Privacy Policy</a>
-      <a href="#">FAQs</a>
-      <a href="#">Blog/Resources</a>
+  <!-- CONTACT -->
+  <section class="contact-us autoBlur" id="contact">
+    <div class="contact-container">
+      <div class="section-label" style="margin-bottom:0.75rem"><span class="mono-tag">// GET IN TOUCH</span></div>
+      <h1>Let's Talk</h1>
+      <p class="contact-sub">Book a free call or send a message — we'll get back to you within 24 hours.</p>
+      <form id="contact-form" action="https://script.google.com/macros/s/AKfycbwxsoDf2PAlgyDQ-khyeJyQm9h24CQYNUzliQ7zP9giIWdlTJo6onARhT35tnd-5HiE3Q/exec" method="POST">
+        <input class="contact-info" type="text" id="name" placeholder="Your Name" name="name" required />
+        <input class="contact-info" type="email" placeholder="Email Address" id="email" name="email" required />
+        <input class="contact-info" placeholder="Phone Number (optional)" id="number" name="number" />
+        <textarea class="contact-info" placeholder="Tell us about your business and what you'd like to automate..." id="message" name="message" rows="5" required></textarea>
+        <button class="form-response" type="submit">Send Message</button>
+      </form>
+      <div id="popupMessage" class="popup"></div>
     </div>
-    <div class="Social">
-      <a href="#"><i class='bx bxl-youtube' style='color:#d107d1'  ></i></a>
-      <a href="#"><i class='bx bxl-linkedin-square' style='color:#d107d1' ></i></a>
-      <a href="#"><i class='bx bxl-github' style='color:#d107d1' ></i></a>
-      <a href="#"><i class='bx bxl-instagram' style='color:#d107d1' ></i></a>
-      <a href="#"><i class='bx bxl-facebook-circle' style='color:#d107d1' ></i></a>
-    </div>
-
-    </ul>
   </section>
+
+  <!-- FOOTER -->
+  <footer class="bottom">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h2 class="logo">Automate</h2>
+        <p>Custom AI automation for ambitious businesses.</p>
+
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <span class="footer-col-title">Solutions</span>
+          <a href="products.html">All Products</a>
+          <a href="products.html#content">Content &amp; Media</a>
+          <a href="products.html#intelligence">Intelligence &amp; Security</a>
+          <a href="products.html#operations">Operations &amp; Finance</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-title">Company</span>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-title">Legal</span>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© Automate 2025. All rights reserved.</p>
+      <div class="Social">
+        <a href="#" aria-label="YouTube"><i class='bx bxl-youtube' style='color:#d107d1'></i></a>
+        <a href="#" aria-label="LinkedIn"><i class='bx bxl-linkedin-square' style='color:#d107d1'></i></a>
+        <a href="#" aria-label="GitHub"><i class='bx bxl-github' style='color:#d107d1'></i></a>
+        <a href="#" aria-label="Instagram"><i class='bx bxl-instagram' style='color:#d107d1'></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
 </body>
-<script type="module" src="script.js"></script>
 </html>
