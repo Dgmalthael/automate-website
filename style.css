@@ -1200,11 +1200,14 @@ nav a.nav-active {
 }
 @media (max-width: 900px) {
   .autoBlur {
-    animation: none;
-    filter: none;
-    opacity: 1;
-    transform: none;
+    animation: autoBlurMobile linear both;
+    animation-timeline: view();
   }
+}
+@keyframes autoBlurMobile {
+  0%   { filter: blur(8px); opacity: 0; transform: translateY(15px); }
+  25%, 65% { filter: blur(0); opacity: 1; transform: translateY(0); }
+  100% { filter: blur(4px); opacity: 0; transform: translateY(-30px); }
 }
 @keyframes autoBlurAnimation {
   0%   { filter: blur(40px); opacity: 0; transform: translateY(30px); }
