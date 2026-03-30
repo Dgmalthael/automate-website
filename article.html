@@ -3,8 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ═══ Consent Mode v2 — MUST be first ═══ -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    (function(){
+      var c = localStorage.getItem('cookie_consent');
+      var a = localStorage.getItem('cookie_analytics') || 'denied';
+      var m = localStorage.getItem('cookie_marketing') || 'denied';
+      if (c === 'granted_all') {
+        gtag('consent','default',{analytics_storage:'granted',ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted'});
+      } else if (c === 'custom') {
+        gtag('consent','default',{analytics_storage:a,ad_storage:m,ad_user_data:m,ad_personalization:m});
+      } else {
+        gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});
+        gtag('set','ads_data_redaction',true);
+        gtag('set','url_passthrough',true);
+      }
+    })();
+  </script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4EQMQCLQ3F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4EQMQCLQ3F');
+  </script>
   <title>Inside the Automation Stack — Automate Blog</title>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -166,17 +194,19 @@
     <div class="footer-bottom">
       <p>© Automate 2025. All rights reserved.</p>
       <div class="Social">
-        <a href="https://www.linkedin.com/company/automatedev/" aria-label="LinkedIn"><i class='bx bxl-linkedin-square' style='color:#d107d1'></i></a>
-        <a href="https://x.com/a_mate_dev" aria-label="X"><svg viewBox="0 0 24 24" width="1.4rem" height="1.4rem" fill="#d107d1" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-        <a href="https://t.me/a_mate_dev" aria-label="Telegram"><i class='bx bxl-telegram' style='color:#d107d1'></i></a>
-        <a href="https://www.instagram.com/amate_dev/" aria-label="Instagram"><i class='bx bxl-instagram' style='color:#d107d1'></i></a>
-        <a href="https://www.tiktok.com/@amate.dev" aria-label="TikTok"><i class='bx bxl-tiktok' style='color:#d107d1'></i></a>
-        <a href="https://www.youtube.com/channel/UCJuZM9lDoQ2gtKn5X4FOQSQ" aria-label="YouTube"><i class='bx bxl-youtube' style='color:#d107d1'></i></a>
+        <a href="https://www.linkedin.com/company/automatedev/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" style="color:#d107d1"></i></a>
+        <a href="https://x.com/a_mate_dev" aria-label="X"><i class="fa-brands fa-x-twitter" style="color:#d107d1"></i></a>
+        <a href="https://t.me/a_mate_dev" aria-label="Telegram"><i class="fa-brands fa-telegram" style="color:#d107d1"></i></a>
+        <a href="https://www.instagram.com/amate_dev/" aria-label="Instagram"><i class="fa-brands fa-instagram" style="color:#d107d1"></i></a>
+        <a href="https://www.tiktok.com/@amate.dev" aria-label="TikTok"><i class="fa-brands fa-tiktok" style="color:#d107d1"></i></a>
+        <a href="https://www.youtube.com/channel/UCJuZM9lDoQ2gtKn5X4FOQSQ" aria-label="YouTube"><i class="fa-brands fa-youtube" style="color:#d107d1"></i></a>
       </div>
     </div>
   </footer>
 
   <script type="module" src="script.js"></script>
   <script src="cms.js"></script>
+
+  <script src="cookie-consent.js"></script>
 </body>
 </html>
