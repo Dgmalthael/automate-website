@@ -114,6 +114,8 @@ async function initBlog() {
       const el = document.createElement('article');
       el.className = 'blog-card-spotlight';
       el.dataset.category = a.category;
+      el.style.cursor = 'pointer';
+      el.addEventListener('click', (e) => { if (!e.target.closest('a, button')) location.href = url; });
       el.innerHTML = `
         <div class="spotlight-img blog-img-${a.category}">
           ${a.image_url ? `<img src="${a.image_url}" alt="${a.title}" class="blog-card-cover-img">` : ''}
@@ -137,6 +139,8 @@ async function initBlog() {
       const el = document.createElement('article');
       el.className = 'blog-card';
       el.dataset.category = a.category;
+      el.style.cursor = 'pointer';
+      el.addEventListener('click', (e) => { if (!e.target.closest('a, button')) location.href = url; });
       el.innerHTML = `
         <div class="blog-card-img blog-img-${a.category}">
           ${a.image_url ? `<img src="${a.image_url}" alt="${a.title}" class="blog-card-cover-img">` : ''}
@@ -177,10 +181,20 @@ async function initBlog() {
    ════════════════════════════════════════════════════════════ */
 async function initArticle() {
   const slug = new URLSearchParams(window.location.search).get('slug');
-  if (!slug) return;
 
-  const content = document.getElementById('article-content');
-  if (content) content.innerHTML = `
+  if (!slug) {
+    document.getElementById('article-title').textContent = 'No article specified.';
+    document.getElementById('article-content').innerHTML = '<p>Please return to the <a href="blog.html">blog</a> and select an article.</p>';
+    return;
+  }
+
+  /* show loading state across all header fields + body */
+  document.getElementById('article-tag').textContent         = '';
+  document.getElementById('article-date').textContent        = '';
+  document.getElementById('article-title').innerHTML         = '<span class="article-loading-title">Loading…</span>';
+  document.getElementById('article-lead').textContent        = '';
+  document.getElementById('article-author-name').textContent = '';
+  document.getElementById('article-content').innerHTML = `
     <div class="cms-loading">
       <i class='bx bx-loader-alt cms-spinner'></i>
       <span>Loading article…</span>

@@ -663,12 +663,8 @@ nav a.nav-active {
   height: 100px;
   border-radius: 50%;
   border: 2px solid rgba(209,7,209,0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Syne', sans-serif;
-  font-size: 1.4rem;
-  font-weight: 800;
+  object-fit: cover;
+  object-position: center top;
   flex-shrink: 0;
   background: linear-gradient(135deg, rgba(0,0,255,0.15), rgba(209,7,209,0.1));
 }
@@ -833,6 +829,7 @@ nav a.nav-active {
 .spotlight-body > p { font-size: 0.84rem; color: var(--text-muted); line-height: 1.7; }
 
 /* CMS LOADING */
+.article-loading-title { color: var(--text-muted); font-weight: 400; font-size: 1.2rem; }
 .cms-loading {
   grid-column: 1 / -1;
   display: flex;
