@@ -186,7 +186,8 @@ nav a.nav-active {
   padding: 2px;
 }
 .btn-learn-more::before { filter: blur(1rem); opacity: 0.4; }
-.btn-learn-more:hover { color: white; box-shadow: 0 0 20px var(--glow-m), 0 0 10px var(--glow-b); }
+.btn-learn-more:hover,
+.product-detail-card:hover .btn-learn-more { color: white; box-shadow: 0 0 20px var(--glow-m), 0 0 10px var(--glow-b); }
 
 .btn-item {
   background: none;
@@ -202,7 +203,8 @@ nav a.nav-active {
   display: inline-block;
   margin-top: 0.75rem;
 }
-.btn-item:hover { color: var(--text); border-color: var(--magenta); }
+.btn-item:hover,
+.item-intro:hover .btn-item { color: var(--text); border-color: var(--magenta); box-shadow: 0 0 8px var(--magenta); }
 
 /* ── 3D CONTAINER ── */
 #conteiner3D {
@@ -383,7 +385,7 @@ nav a.nav-active {
   font-size: 0.95rem;
   transition: all 0.3s;
 }
-.product-card:hover .card-learn-more { background: rgba(209,7,209,0.2); border-color: var(--magenta); color: white; }
+.product-card:hover .card-learn-more { background: rgba(209,7,209,0.2); border-color: var(--magenta); color: white; box-shadow: 0 0 8px var(--magenta); }
 
 /* ITEM CARDS GRID */
 .products-intro { padding: 3rem 5rem 5rem; }
