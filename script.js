@@ -42,10 +42,12 @@ const bottomLight = new THREE.DirectionalLight(0xffffff, 2);
 bottomLight.position.set(500, -500, 500);
 scene.add(bottomLight);
 
+let animSpeed = 0.005;
+
 (function reRender3D() {
   requestAnimationFrame(reRender3D);
   renderer.render(scene, camera);
-  if (mixer) mixer.update(0.005);
+  if (mixer) mixer.update(animSpeed);
 })();
 
 window.addEventListener('resize', () => {
@@ -54,10 +56,13 @@ window.addEventListener('resize', () => {
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
 
-/* Scroll zoom */
+/* Scroll zoom + blur + slowdown — all tied to scroll position */
 window.addEventListener('scroll', () => {
   const fraction = Math.min(window.scrollY / 1000, 1);
   gsap.to(camera.position, { z: 30 - fraction * 25, duration: 0.5, ease: 'power2.out' });
+
+  if (container3D) container3D.style.filter = `blur(${fraction * 5}px)`;
+  animSpeed = 0.005 - fraction * 0.004; // 0.005 at top → 0.001 at bottom
 });
 
 /* ══════════════════════════════════════
