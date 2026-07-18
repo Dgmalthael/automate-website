@@ -30,19 +30,20 @@
     gtag('js', new Date());
     gtag('config', 'G-4EQMQCLQ3F');
   </script>
-  <title>Products — Automate</title>
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title data-i18n="meta_title_products">Solutions — custom AI automation | Automate</title>
+  <meta name="description" content="AI chatbots, invoice and workflow automation, fraud detection, content pipelines and more — each built and integrated specifically for your business.">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=10">
   <script type="importmap">
     { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@v0.175.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.175.0/examples/jsm/" } }
   </script>
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="favicon-192.png">
 </head>
 <body>
   <div id="conteiner3D"></div>
@@ -51,358 +52,353 @@
   <div class="container">
     <header>
       <a href="index.html" class="link-reset logo-main">
-        <img src="/possible+pictures/logo/logo3_small.webp" alt="Automate Logo">
-        <h1 class="logo">Automate</h1>
+        <img src="possible+pictures/logo/logo3_small.webp" alt="Automate Logo">
+        <span class="logo">Automate</span>
       </a>
       <nav>
-        <a href="products.html" class="nav-active">Products</a>
-        <a href="blog.html">Blog</a>
-        <a href="about.html">About</a>
-        <a href="index.html#contact" class="nav-cta-mobile">Book a Demo →</a>
+        <a href="products.html" class="nav-active" data-i18n="nav_solutions">Solutions</a>
+        <a href="blog.html" data-i18n="nav_blog">Blog</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="index.html#contact" class="nav-cta-mobile" data-i18n="nav_cta">Book a free call →</a>
       </nav>
       <a href="index.html#contact" class="link-reset nav-cta-desktop">
-        <button class="btn-main-sgn">Book a Demo <span class="arrow">→</span></button>
+        <button class="btn-main-sgn" data-i18n="nav_cta_btn">Book a free call <span class="arrow">→</span></button>
       </a>
-      <button class="nav-toggle" aria-label="Toggle menu">
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </header>
   </div>
 
   <!-- HERO -->
-  <section class="page-hero autoBlur">
+  <section class="page-hero autoBlur" data-screen-label="Solutions hero">
     <div class="page-hero-content">
-      <div class="section-label"><span class="mono-tag">// AI SOLUTIONS</span></div>
-      <h1>Everything We Build — <span class="gradient-text">Built for You</span></h1>
-      <p>A modular suite of AI-powered solutions. Each one is implemented, configured,<br>and integrated specifically for your business — not installed from a template.</p>
-      <div class="hero-btns" style="margin-top:2.5rem; justify-content:center;">
-        <a href="index.html#contact" class="link-reset"><button class="btn-hero-sgn">Book a Free Call</button></a>
-        <a href="#pricing" class="link-reset"><button class="btn-hero-build-AI">How Pricing Works ↓</button></a>
+      <div class="section-label"><span class="mono-tag" data-i18n="phero_label">// AI SOLUTIONS</span></div>
+      <h1 data-i18n="phero_title">Everything we build — <span class="gradient-text">built for you</span></h1>
+      <p data-i18n="phero_sub">A modular suite of AI-powered solutions. Each one is implemented, configured, and integrated specifically for your business — not installed from a template.</p>
+      <div class="hero-btns" style="margin-top:2.5rem;">
+        <a href="index.html#contact" class="link-reset"><button class="btn-hero-sgn" data-i18n="book_free_call">Book a free call</button></a>
+        <a href="#pricing" class="link-reset"><button class="btn-hero-build-AI" data-i18n="phero_cta2">How pricing works ↓</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORY: OPERATIONS & FINANCE -->
+  <section class="product-category autoBlur" id="operations" data-screen-label="Operations & finance">
+    <div class="category-inner">
+      <div class="category-header">
+        <span class="mono-tag category-tag" data-i18n="cat4_tag">// OPERATIONS &amp; FINANCE</span>
+        <h2 class="section-title-grad" data-i18n="cat4_title">Optimize every operation.</h2>
+        <p data-i18n="cat4_sub">AI for supply chain, financial markets, and business intelligence.</p>
+      </div>
+      <div class="product-detail-grid">
+
+        <div class="product-detail-card">
+          <div class="product-detail-icon"><i class="bx bx-transfer"></i></div>
+          <div class="product-detail-info">
+            <h3 data-i18n="pwf_t">Workflow &amp; Back-office Automation</h3>
+            <p data-i18n="pwf_d">The unglamorous work that eats your week — invoice processing, data entry between systems, email triage, report generation. We connect the tools you already use so it runs on its own.</p>
+            <ul class="product-features">
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="pwf_f1">Invoice &amp; document processing</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="pwf_f2">Cross-system data sync (CRM, ERP, sheets)</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="pwf_f3">Email triage &amp; auto-drafting</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="pwf_f4">Scheduled reports &amp; alerts</span></li>
+            </ul>
+            <a href="index.html#contact" class="link-reset"><button class="btn-learn-more" data-i18n="discuss_btn">Discuss this solution →</button></a>
+          </div>
+        </div>
+
+        <div class="product-detail-card">
+          <div class="product-detail-icon"><i class="bx bx-package"></i></div>
+          <div class="product-detail-info">
+            <h3 data-i18n="p10_t">Inventory Management</h3>
+            <p data-i18n="p10_d">Demand forecasting, automated purchase order generation, and supplier risk scoring — all built around your actual sales history and supply chain structure.</p>
+            <ul class="product-features">
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p10_f1">Data-driven demand forecasting</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p10_f2">Automated reorder triggers</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p10_f3">Supplier risk analysis</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p10_f4">ERP &amp; WMS integrations</span></li>
+            </ul>
+            <a href="index.html#contact" class="link-reset"><button class="btn-learn-more" data-i18n="discuss_btn">Discuss this solution →</button></a>
+          </div>
+        </div>
+
+        <div class="product-detail-card">
+          <div class="product-detail-icon"><i class="bx bx-line-chart"></i></div>
+          <div class="product-detail-info">
+            <h3 data-i18n="p11_t">AI-Powered Trading</h3>
+            <p data-i18n="p11_d">Quantitative trading automation across equities, crypto, and FX. Define your strategy parameters — the system monitors markets, executes, and refines continuously.</p>
+            <ul class="product-features">
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p11_f1">Multi-asset class support</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p11_f2">Risk-adjusted optimization</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p11_f3">Backtesting environment</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p11_f4">Real-time market data feeds</span></li>
+            </ul>
+            <a href="index.html#contact" class="link-reset"><button class="btn-learn-more" data-i18n="discuss_btn">Discuss this solution →</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORY: INTELLIGENCE & SECURITY -->
+  <section class="product-category product-category-alt autoBlur" id="intelligence" data-screen-label="Intelligence & security">
+    <div class="category-inner">
+      <div class="category-header">
+        <span class="mono-tag category-tag" data-i18n="cat2_tag">// INTELLIGENCE &amp; SECURITY</span>
+        <h2 class="section-title-grad" data-i18n="cat2_title">Smarter decisions, faster.</h2>
+        <p data-i18n="cat2_sub">AI that detects, responds, and decides at machine speed — so your team doesn't have to.</p>
+      </div>
+      <div class="product-detail-grid">
+
+        <div class="product-detail-card">
+          <div class="product-detail-icon"><i class="bx bx-bot"></i></div>
+          <div class="product-detail-info">
+            <h3 data-i18n="p4_t">AI Chatbots</h3>
+            <p data-i18n="p4_d">Conversational agents trained on your business data. Handle customer support, lead qualification, or internal knowledge queries — around the clock, at any volume.</p>
+            <ul class="product-features">
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p4_f1">Fine-tuned on your own data</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p4_f2">Multilingual support</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p4_f3">CRM and helpdesk integration</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p4_f4">Conversation analytics</span></li>
+            </ul>
+            <a href="index.html#contact" class="link-reset"><button class="btn-learn-more" data-i18n="discuss_btn">Discuss this solution →</button></a>
+          </div>
+        </div>
+
+        <div class="product-detail-card">
+          <div class="product-detail-icon"><i class="bx bx-shield-alt-2"></i></div>
+          <div class="product-detail-info">
+            <h3 data-i18n="p5_t">Fraud Detection</h3>
+            <p data-i18n="p5_d">Real-time anomaly detection trained on your transaction patterns. Identifies fraud signals that rule-based systems miss — and flags them before damage occurs.</p>
+            <ul class="product-features">
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p5_f1">Sub-second detection latency</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p5_f2">Self-updating ML models</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p5_f3">Explainable alert system</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p5_f4">Compliance-friendly architecture</span></li>
+            </ul>
+            <a href="index.html#contact" class="link-reset"><button class="btn-learn-more" data-i18n="discuss_btn">Discuss this solution →</button></a>
+          </div>
+        </div>
+
+        <div class="product-detail-card">
+          <div class="product-detail-icon"><i class="bx bx-radar"></i></div>
+          <div class="product-detail-info">
+            <h3 data-i18n="p6_t">Threat Detection</h3>
+            <p data-i18n="p6_d">Cybersecurity intelligence that monitors network traffic, user behavior, and system logs for emerging threats — with automated response playbooks configured to your environment.</p>
+            <ul class="product-features">
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p6_f1">Continuous 24/7 monitoring</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p6_f2">Behavioral anomaly detection</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p6_f3">Automated incident response</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p6_f4">SIEM-compatible integration</span></li>
+            </ul>
+            <a href="index.html#contact" class="link-reset"><button class="btn-learn-more" data-i18n="discuss_btn">Discuss this solution →</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORY: CONTENT & MEDIA -->
+  <section class="product-category autoBlur" id="content" data-screen-label="Content & media">
+    <div class="category-inner">
+      <div class="category-header">
+        <span class="mono-tag category-tag" data-i18n="cat3_tag">// CONTENT &amp; MEDIA</span>
+        <h2 class="section-title-grad" data-i18n="cat3_title">Create. Publish. Automate.</h2>
+        <p data-i18n="cat3_sub">AI tools that handle the full content lifecycle — from idea to distribution.</p>
+      </div>
+      <div class="product-detail-grid">
+
+        <div class="product-detail-card">
+          <div class="product-detail-icon"><i class="bx bx-microphone"></i></div>
+          <div class="product-detail-info">
+            <h3 data-i18n="p7_t">Podcast Generation</h3>
+            <p data-i18n="p7_d">Full podcast automation. Input a topic, URL, or brief — receive a fully scripted episode with AI voice synthesis, sound design, and ready-to-publish audio.</p>
+            <ul class="product-features">
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p7_f1">Custom-tone AI script generation</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p7_f2">Multi-voice synthesis engine</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p7_f3">Auto-publish pipeline setup</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p7_f4">Analytics integration</span></li>
+            </ul>
+            <a href="index.html#contact" class="link-reset"><button class="btn-learn-more" data-i18n="discuss_btn">Discuss this solution →</button></a>
+          </div>
+        </div>
+
+        <div class="product-detail-card">
+          <div class="product-detail-icon"><i class="bx bx-trending-up"></i></div>
+          <div class="product-detail-info">
+            <h3 data-i18n="p8_t">Social Media Management</h3>
+            <p data-i18n="p8_d">An AI social media system built around your brand. Plan, generate, and schedule content across all major platforms — with a voice that actually sounds like you.</p>
+            <ul class="product-features">
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p8_f1">AI content calendar generation</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p8_f2">Cross-platform scheduling</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p8_f3">Engagement reporting</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p8_f4">Brand voice configuration</span></li>
+            </ul>
+            <a href="index.html#contact" class="link-reset"><button class="btn-learn-more" data-i18n="discuss_btn">Discuss this solution →</button></a>
+          </div>
+        </div>
+
+        <div class="product-detail-card">
+          <div class="product-detail-icon"><i class="bx bx-image-alt"></i></div>
+          <div class="product-detail-info">
+            <h3 data-i18n="p9_t">Image Generation</h3>
+            <p data-i18n="p9_d">On-demand visual content production. Generate brand-aligned images, marketing banners, and product visuals — integrated directly into your existing workflows.</p>
+            <ul class="product-features">
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p9_f1">Brand kit and style integration</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p9_f2">Consistent style controls</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p9_f3">Batch generation pipeline</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p9_f4">Commercial usage rights</span></li>
+            </ul>
+            <a href="index.html#contact" class="link-reset"><button class="btn-learn-more" data-i18n="discuss_btn">Discuss this solution →</button></a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- CATEGORY: CONSULTING & DEVELOPMENT -->
-  <section class="product-category autoBlur" id="consulting">
-    <div class="category-header">
-      <span class="mono-tag category-tag">// CONSULTING &amp; DEVELOPMENT</span>
-      <h2 class="section-title-grad">Strategy. Built. Delivered.</h2>
-      <p>From business strategy to technical implementation — end-to-end support for companies building with technology.</p>
-    </div>
-    <div class="product-detail-grid">
-
-      <div class="product-detail-card">
-        <div class="product-detail-icon" style="background:linear-gradient(135deg,#0400a0,#d107d1)">
-          <i class='bx bx-desktop'></i>
-        </div>
-        <div class="product-detail-info">
-          <h3>IT Consultancy</h3>
-          <p>Strategic technology advisory for businesses navigating digital transformation. From infrastructure audits to software architecture decisions — clarity before commitment.</p>
-          <ul class="product-features">
-            <li><i class='bx bx-check-circle'></i> Technology stack assessment</li>
-            <li><i class='bx bx-check-circle'></i> Digital transformation roadmap</li>
-            <li><i class='bx bx-check-circle'></i> Vendor and tooling evaluation</li>
-            <li><i class='bx bx-check-circle'></i> Team capability planning</li>
-          </ul>
-          <a href="index.html#contact" class="link-reset"><button class="btn-learn-more">Discuss This Solution →</button></a>
-        </div>
+  <section class="product-category product-category-alt autoBlur" id="consulting" data-screen-label="Consulting & development">
+    <div class="category-inner">
+      <div class="category-header">
+        <span class="mono-tag category-tag" data-i18n="cat1_tag">// CONSULTING &amp; DEVELOPMENT</span>
+        <h2 class="section-title-grad" data-i18n="cat1_title">Strategy. Built. Delivered.</h2>
+        <p data-i18n="cat1_sub">From business strategy to technical implementation — full support for companies building with technology.</p>
       </div>
+      <div class="product-detail-grid">
 
-      <div class="product-detail-card">
-        <div class="product-detail-icon" style="background:linear-gradient(135deg,#d107d1,#0000ff)">
-          <i class='bx bx-code-alt'></i>
+        <div class="product-detail-card">
+          <div class="product-detail-icon"><i class="bx bx-desktop"></i></div>
+          <div class="product-detail-info">
+            <h3 data-i18n="p1_t">IT Consultancy</h3>
+            <p data-i18n="p1_d">Strategic technology advisory for businesses modernising how they work. From infrastructure audits to software architecture decisions — clarity before commitment.</p>
+            <ul class="product-features">
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p1_f1">Technology stack assessment</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p1_f2">Clear technology roadmap</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p1_f3">Vendor and tooling evaluation</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p1_f4">Team capability planning</span></li>
+            </ul>
+            <a href="index.html#contact" class="link-reset"><button class="btn-learn-more" data-i18n="discuss_btn">Discuss this solution →</button></a>
+          </div>
         </div>
-        <div class="product-detail-info">
-          <h3>API &amp; Web Development</h3>
-          <p>Custom APIs and interactive web applications built for performance and scalability. Designed around your workflows, integrated with your existing systems, and delivered with full documentation.</p>
-          <ul class="product-features">
-            <li><i class='bx bx-check-circle'></i> RESTful &amp; GraphQL API design</li>
-            <li><i class='bx bx-check-circle'></i> Interactive frontend development</li>
-            <li><i class='bx bx-check-circle'></i> Third-party integrations</li>
-            <li><i class='bx bx-check-circle'></i> Full deployment &amp; documentation</li>
-          </ul>
-          <a href="index.html#contact" class="link-reset"><button class="btn-learn-more">Discuss This Solution →</button></a>
+
+        <div class="product-detail-card">
+          <div class="product-detail-icon"><i class="bx bx-code-alt"></i></div>
+          <div class="product-detail-info">
+            <h3 data-i18n="p2_t">API &amp; Web Development</h3>
+            <p data-i18n="p2_d">Custom APIs and interactive web applications built for performance and scalability. Designed around your workflows, integrated with your existing systems, and delivered with full documentation.</p>
+            <ul class="product-features">
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p2_f1">RESTful &amp; GraphQL API design</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p2_f2">Interactive frontend development</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p2_f3">Third-party integrations</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p2_f4">Full deployment &amp; documentation</span></li>
+            </ul>
+            <a href="index.html#contact" class="link-reset"><button class="btn-learn-more" data-i18n="discuss_btn">Discuss this solution →</button></a>
+          </div>
         </div>
+
+        <div class="product-detail-card">
+          <div class="product-detail-icon"><i class="bx bx-briefcase"></i></div>
+          <div class="product-detail-info">
+            <h3 data-i18n="p3_t">Business Plan Development</h3>
+            <p data-i18n="p3_d">Structured, data-backed business plans for startups and growth-stage companies. Built for investors, banks, or internal strategy — with financial projections and market analysis included.</p>
+            <ul class="product-features">
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p3_f1">Market &amp; competitive analysis</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p3_f2">Financial projections &amp; modelling</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p3_f3">Go-to-market strategy</span></li>
+              <li><i class="bx bx-check-circle"></i> <span data-i18n="p3_f4">Investor-ready formatting</span></li>
+            </ul>
+            <a href="index.html#contact" class="link-reset"><button class="btn-learn-more" data-i18n="discuss_btn">Discuss this solution →</button></a>
+          </div>
+        </div>
+
       </div>
-
-      <div class="product-detail-card">
-        <div class="product-detail-icon" style="background:linear-gradient(135deg,#0000ff,#128012)">
-          <i class='bx bx-briefcase'></i>
-        </div>
-        <div class="product-detail-info">
-          <h3>Business Plan Development</h3>
-          <p>Structured, data-backed business plans for startups and growth-stage companies. Built for investors, banks, or internal strategy — with financial projections and market analysis included.</p>
-          <ul class="product-features">
-            <li><i class='bx bx-check-circle'></i> Market &amp; competitive analysis</li>
-            <li><i class='bx bx-check-circle'></i> Financial projections &amp; modelling</li>
-            <li><i class='bx bx-check-circle'></i> Go-to-market strategy</li>
-            <li><i class='bx bx-check-circle'></i> Investor-ready formatting</li>
-          </ul>
-          <a href="index.html#contact" class="link-reset"><button class="btn-learn-more">Discuss This Solution →</button></a>
-        </div>
-      </div>
-
     </div>
   </section>
 
-  <!-- CATEGORY: INTELLIGENCE & SECURITY -->
-  <section class="product-category product-category-alt autoBlur" id="intelligence">
-    <div class="category-header">
-      <span class="mono-tag category-tag">// INTELLIGENCE &amp; SECURITY</span>
-      <h2 class="section-title-grad">Smarter Decisions, Faster.</h2>
-      <p>AI that detects, responds, and decides at machine speed — so your team doesn't have to.</p>
-    </div>
-    <div class="product-detail-grid">
-
-      <div class="product-detail-card">
-        <div class="product-detail-icon" style="background:linear-gradient(135deg,#128012,#0000ff)">
-          <i class='bx bx-bot'></i>
-        </div>
-        <div class="product-detail-info">
-          <h3>AI Chatbots</h3>
-          <p>Conversational agents trained on your business data. Handle customer support, lead qualification, or internal knowledge queries — around the clock, at any volume.</p>
-          <ul class="product-features">
-            <li><i class='bx bx-check-circle'></i> Fine-tuned on your own data</li>
-            <li><i class='bx bx-check-circle'></i> Multilingual support</li>
-            <li><i class='bx bx-check-circle'></i> CRM and helpdesk integration</li>
-            <li><i class='bx bx-check-circle'></i> Conversation analytics</li>
-          </ul>
-          <a href="index.html#contact" class="link-reset"><button class="btn-learn-more">Discuss This Solution →</button></a>
-        </div>
-      </div>
-
-      <div class="product-detail-card">
-        <div class="product-detail-icon" style="background:linear-gradient(135deg,#801212,#d107d1)">
-          <i class='bx bx-shield-alt-2'></i>
-        </div>
-        <div class="product-detail-info">
-          <h3>Fraud Detection</h3>
-          <p>Real-time anomaly detection trained on your transaction patterns. Identifies fraud signals that rule-based systems miss — and flags them before damage occurs.</p>
-          <ul class="product-features">
-            <li><i class='bx bx-check-circle'></i> Sub-second detection latency</li>
-            <li><i class='bx bx-check-circle'></i> Self-updating ML models</li>
-            <li><i class='bx bx-check-circle'></i> Explainable alert system</li>
-            <li><i class='bx bx-check-circle'></i> Compliance-friendly architecture</li>
-          </ul>
-          <a href="index.html#contact" class="link-reset"><button class="btn-learn-more">Discuss This Solution →</button></a>
-        </div>
-      </div>
-
-      <div class="product-detail-card">
-        <div class="product-detail-icon" style="background:linear-gradient(135deg,#d107d1,#128012)">
-          <i class='bx bx-radar'></i>
-        </div>
-        <div class="product-detail-info">
-          <h3>Threat Detection</h3>
-          <p>Cybersecurity intelligence that monitors network traffic, user behavior, and system logs for emerging threats — with automated response playbooks configured to your environment.</p>
-          <ul class="product-features">
-            <li><i class='bx bx-check-circle'></i> Continuous 24/7 monitoring</li>
-            <li><i class='bx bx-check-circle'></i> Behavioral anomaly detection</li>
-            <li><i class='bx bx-check-circle'></i> Automated incident response</li>
-            <li><i class='bx bx-check-circle'></i> SIEM-compatible integration</li>
-          </ul>
-          <a href="index.html#contact" class="link-reset"><button class="btn-learn-more">Discuss This Solution →</button></a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-    <!-- CATEGORY: CONTENT & MEDIA -->
-  <section class="product-category autoBlur" id="content">
-    <div class="category-header">
-      <span class="mono-tag category-tag">// CONTENT &amp; MEDIA</span>
-      <h2 class="section-title-grad">Create. Publish. Automate.</h2>
-      <p>AI tools that handle the full content lifecycle — from idea to distribution.</p>
-    </div>
-    <div class="product-detail-grid">
-
-      <div class="product-detail-card">
-        <div class="product-detail-icon" style="background:linear-gradient(135deg,#0400a0,#d107d1)">
-          <i class='bx bx-microphone'></i>
-        </div>
-        <div class="product-detail-info">
-          <h3>Podcast Generation</h3>
-          <p>End-to-end podcast automation. Input a topic, URL, or brief — receive a fully scripted episode with AI voice synthesis, sound design, and ready-to-publish audio.</p>
-          <ul class="product-features">
-            <li><i class='bx bx-check-circle'></i> Custom-tone AI script generation</li>
-            <li><i class='bx bx-check-circle'></i> Multi-voice synthesis engine</li>
-            <li><i class='bx bx-check-circle'></i> Auto-publish pipeline setup</li>
-            <li><i class='bx bx-check-circle'></i> Analytics integration</li>
-          </ul>
-          <a href="index.html#contact" class="link-reset"><button class="btn-learn-more">Discuss This Solution →</button></a>
-        </div>
-      </div>
-
-      <div class="product-detail-card">
-        <div class="product-detail-icon" style="background:linear-gradient(135deg,#d107d1,#0000ff)">
-          <i class='bx bx-trending-up'></i>
-        </div>
-        <div class="product-detail-info">
-          <h3>Social Media Management</h3>
-          <p>An AI social media system built around your brand. Plan, generate, and schedule content across all major platforms — with a voice that actually sounds like you.</p>
-          <ul class="product-features">
-            <li><i class='bx bx-check-circle'></i> AI content calendar generation</li>
-            <li><i class='bx bx-check-circle'></i> Cross-platform scheduling</li>
-            <li><i class='bx bx-check-circle'></i> Engagement reporting</li>
-            <li><i class='bx bx-check-circle'></i> Brand voice configuration</li>
-          </ul>
-          <a href="index.html#contact" class="link-reset"><button class="btn-learn-more">Discuss This Solution →</button></a>
-        </div>
-      </div>
-
-      <div class="product-detail-card">
-        <div class="product-detail-icon" style="background:linear-gradient(135deg,#0000ff,#d107d1)">
-          <i class='bx bx-image-alt'></i>
-        </div>
-        <div class="product-detail-info">
-          <h3>Image Generation</h3>
-          <p>On-demand visual content production. Generate brand-aligned images, marketing banners, and product visuals — integrated directly into your existing workflows.</p>
-          <ul class="product-features">
-            <li><i class='bx bx-check-circle'></i> Brand kit and style integration</li>
-            <li><i class='bx bx-check-circle'></i> Consistent style controls</li>
-            <li><i class='bx bx-check-circle'></i> Batch generation pipeline</li>
-            <li><i class='bx bx-check-circle'></i> Commercial usage rights</li>
-          </ul>
-          <a href="index.html#contact" class="link-reset"><button class="btn-learn-more">Discuss This Solution →</button></a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-    <!-- CATEGORY: OPERATIONS & FINANCE -->
-  <section class="product-category autoBlur" id="operations">
-    <div class="category-header">
-      <span class="mono-tag category-tag">// OPERATIONS &amp; FINANCE</span>
-      <h2 class="section-title-grad">Optimize Every Operation.</h2>
-      <p>End-to-end AI for supply chain, financial markets, and business intelligence.</p>
-    </div>
-    <div class="product-detail-grid product-detail-grid-two">
-
-      <div class="product-detail-card">
-        <div class="product-detail-icon" style="background:linear-gradient(135deg,#0400a0,#128012)">
-          <i class='bx bx-package'></i>
-        </div>
-        <div class="product-detail-info">
-          <h3>Inventory Management</h3>
-          <p>Demand forecasting, automated purchase order generation, and supplier risk scoring — all built around your actual sales history and supply chain structure.</p>
-          <ul class="product-features">
-            <li><i class='bx bx-check-circle'></i> Data-driven demand forecasting</li>
-            <li><i class='bx bx-check-circle'></i> Automated reorder triggers</li>
-            <li><i class='bx bx-check-circle'></i> Supplier risk analysis</li>
-            <li><i class='bx bx-check-circle'></i> ERP &amp; WMS integrations</li>
-          </ul>
-          <a href="index.html#contact" class="link-reset"><button class="btn-learn-more">Discuss This Solution →</button></a>
-        </div>
-      </div>
-
-      <div class="product-detail-card">
-        <div class="product-detail-icon" style="background:linear-gradient(135deg,#128012,#d107d1)">
-          <i class='bx bx-line-chart'></i>
-        </div>
-        <div class="product-detail-info">
-          <h3>AI-Powered Trading</h3>
-          <p>Quantitative trading automation across equities, crypto, and FX. Define your strategy parameters — the system monitors markets, executes, and refines continuously.</p>
-          <ul class="product-features">
-            <li><i class='bx bx-check-circle'></i> Multi-asset class support</li>
-            <li><i class='bx bx-check-circle'></i> Risk-adjusted optimization</li>
-            <li><i class='bx bx-check-circle'></i> Backtesting environment</li>
-            <li><i class='bx bx-check-circle'></i> Real-time market data feeds</li>
-          </ul>
-          <a href="index.html#contact" class="link-reset"><button class="btn-learn-more">Discuss This Solution →</button></a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  
   <!-- PRICING MODEL -->
-  <section class="pricing-model autoBlur" id="pricing">
+  <section class="pricing-model autoBlur" id="pricing" data-screen-label="Pricing">
     <div class="pricing-model-inner">
-      <div class="section-label"><span class="mono-tag">// HOW PRICING WORKS</span></div>
-      <h2 class="section-title-grad">No Packages. No Tiers.<br>Just the Right Price.</h2>
-      <p class="section-sub">We don't believe in forcing your project into a subscription box. Every business is different — so every proposal is different.</p>
+      <div class="section-label"><span class="mono-tag" data-i18n="pricing_label">// HOW PRICING WORKS</span></div>
+      <h2 class="section-title-grad" data-i18n="pricing_title">No packages. No tiers. Just the right price.</h2>
+      <p class="section-sub" data-i18n="pricing_sub">We don't believe in forcing your project into a subscription box. Every business is different — so every proposal is different.</p>
 
       <div class="pricing-steps">
         <div class="pricing-step-card">
           <div class="pricing-step-num mono-tag">01</div>
-          <div class="pricing-step-icon"><i class='bx bx-phone-call'></i></div>
-          <h3>Free Discovery Call</h3>
-          <p>We start with a free conversation. No pitch, no commitment. Just an honest look at your business and whether automation makes sense right now.</p>
-          <div class="pricing-step-tag mono-tag">£0 — always free</div>
+          <div class="pricing-step-icon"><i class="bx bx-phone-call"></i></div>
+          <h3 data-i18n="ps1_t">Free discovery call</h3>
+          <p data-i18n="ps1_d">We start with a free conversation. No pitch, no commitment. Just an honest look at your business and whether automation makes sense right now.</p>
+          <div class="pricing-step-tag mono-tag" data-i18n="ps1_tag">£0 — always free</div>
         </div>
-
-        <div class="pricing-step-arrow">→</div>
 
         <div class="pricing-step-card pricing-step-featured">
           <div class="pricing-step-num mono-tag">02</div>
-          <div class="pricing-step-icon"><i class='bx bx-search-alt'></i></div>
-          <h3>System &amp; Workflow Analysis</h3>
-          <p>A one-time, flat-fee deep dive into your systems, processes, and data flows. This produces the detailed foundation for an accurate, fair proposal.</p>
-          <div class="pricing-step-tag mono-tag">One-time flat fee</div>
+          <div class="pricing-step-icon"><i class="bx bx-search-alt"></i></div>
+          <h3 data-i18n="ps2_t">System &amp; workflow analysis</h3>
+          <p data-i18n="ps2_d">A one-time, flat-fee deep dive into your systems, processes, and data flows. This produces the detailed foundation for an accurate, fair proposal.</p>
+          <div class="pricing-step-tag mono-tag" data-i18n="ps2_tag">£500–£1,500 flat fee</div>
         </div>
-
-        <div class="pricing-step-arrow">→</div>
 
         <div class="pricing-step-card">
           <div class="pricing-step-num mono-tag">03</div>
-          <div class="pricing-step-icon"><i class='bx bx-file'></i></div>
-          <h3>Custom Project Quote</h3>
-          <p>You receive a fully scoped proposal priced around your actual project size and complexity. Transparent, itemized, and no surprises at invoice time.</p>
-          <div class="pricing-step-tag mono-tag">Tailored to your project</div>
+          <div class="pricing-step-icon"><i class="bx bx-file"></i></div>
+          <h3 data-i18n="ps3_t">Custom project quote</h3>
+          <p data-i18n="ps3_d">You receive a fully scoped proposal priced around your actual project size and complexity. Transparent, itemized, and no surprises at invoice time.</p>
+          <div class="pricing-step-tag mono-tag" data-i18n="ps3_tag">Builds from £3,000 — fixed price</div>
         </div>
       </div>
-
-      
-  </section>
-<div class="pricing-faq">
-        <h3>Common Questions</h3>
-        <div class="faq-grid">
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              What does the analysis phase cover?
-              <i class='bx bx-chevron-down faq-icon'></i>
-            </button>
-            <div class="faq-answer">
-              <p>The analysis phase is a structured review of your current workflows, software stack, data quality, and team processes. It identifies where automation can be applied, estimates the complexity of each piece, and highlights potential risks — so that the proposal that follows is grounded in reality, not assumptions.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              What if I only need one automation, not a full system?
-              <i class='bx bx-chevron-down faq-icon'></i>
-            </button>
-            <div class="faq-answer">
-              <p>That's completely fine. Many projects start small. The analysis and proposal will reflect the actual scope — whether that's a single chatbot, one automated pipeline, or a full multi-system deployment. You only pay for what you need.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              Do I own the system after it's built?
-              <i class='bx bx-chevron-down faq-icon'></i>
-            </button>
-            <div class="faq-answer">
-              <p>Yes — fully. Every solution is built, documented, and handed over so you can run and manage it independently. We don't build systems that require an ongoing retainer to keep working. If you want ongoing support or iteration, that can be scoped separately.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              How long does a typical project take?
-              <i class='bx bx-chevron-down faq-icon'></i>
-            </button>
-            <div class="faq-answer">
-              <p>It depends on the scope. A focused single-product automation can take a few weeks. A multi-system integration with custom model training will take longer. The proposal always includes a realistic timeline — we don't overpromise on delivery speed.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
-  <div style="text-align:center; margin:4rem 0;">
-    <p style="color:var(--text-muted); margin-bottom:1.5rem; font-size:0.95rem;">Ready to find out what the right automation for your business looks like?</p>
-    <a href="index.html#contact" class="link-reset"><button class="btn-hero-sgn">Book Your Free Discovery Call</button></a>
+
+    <div class="pricing-faq">
+      <h3 data-i18n="faq_title">Common questions</h3>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq1_q">What does the analysis phase cover?</span>
+            <i class="bx bx-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq1_a">The analysis phase is a structured review of your current workflows, software stack, data quality, and team processes. It identifies where automation can be applied, estimates the complexity of each piece, and highlights potential risks — so that the proposal that follows is grounded in reality, not assumptions.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq2_q">What if I only need one automation, not a full system?</span>
+            <i class="bx bx-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq2_a">That's completely fine. Many projects start small. The analysis and proposal will reflect the actual scope — whether that's a single chatbot, one automated pipeline, or a full multi-system deployment. You only pay for what you need.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq3_q">Do I own the system after it's built?</span>
+            <i class="bx bx-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq3_a">Yes — fully. Every solution is built, documented, and handed over so you can run and manage it independently. We don't build systems that require an ongoing retainer to keep working. If you want ongoing support or iteration, that can be scoped separately.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq4_q">How long does a typical project take?</span>
+            <i class="bx bx-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq4_a">It depends on the scope. A focused single-product automation can take a few weeks. A multi-system integration with custom model training will take longer. The proposal always includes a realistic timeline — we don't overpromise on delivery speed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="pready-wrap">
+    <p data-i18n="pready">Ready to find out what the right automation for your business looks like?</p>
+    <a href="index.html#contact" class="link-reset"><button class="btn-hero-sgn" data-i18n="book_discovery">Book your free discovery call</button></a>
   </div>
 
   <!-- FOOTER -->
@@ -410,56 +406,59 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <h2 class="logo">Automate</h2>
-        <p>Custom AI automation for ambitious businesses.</p>
+        <p data-i18n="footer_tagline">Custom AI automation for ambitious businesses.</p>
       </div>
       <div class="footer-links">
         <div class="footer-col">
-          <span class="footer-col-title">Solutions</span>
-          <a href="#content">Content &amp; Media</a>
-          <a href="#intelligence">Intelligence &amp; Security</a>
-          <a href="#operations">Operations &amp; Finance</a>
-          <a href="#consulting">Consulting &amp; Development</a>
-          <a href="#pricing">How Pricing Works</a>
+          <span class="footer-col-title" data-i18n="footer_col_solutions">Solutions</span>
+          <a href="products.html" data-i18n="footer_all_solutions">All solutions</a>
+          <a href="#content" data-i18n="footer_content">Content &amp; media</a>
+          <a href="#intelligence" data-i18n="footer_intelligence">Intelligence &amp; security</a>
+          <a href="#operations" data-i18n="footer_operations">Operations &amp; finance</a>
         </div>
         <div class="footer-col">
-          <span class="footer-col-title">Company</span>
-          <a href="about.html">About</a>
-          <a href="blog.html">Blog</a>
-          <a href="index.html#contact">Contact</a>
+          <span class="footer-col-title" data-i18n="footer_col_company">Company</span>
+          <a href="about.html" data-i18n="footer_about">About</a>
+          <a href="blog.html" data-i18n="footer_blog">Blog</a>
+          <a href="index.html#contact" data-i18n="footer_contact">Contact</a>
         </div>
         <div class="footer-col">
-          <span class="footer-col-title">Legal</span>
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="terms.html">Terms of Service</a>
+          <span class="footer-col-title" data-i18n="footer_col_legal">Legal</span>
+          <a href="privacy.html" data-i18n="footer_privacy">Privacy policy</a>
+          <a href="terms.html" data-i18n="footer_terms">Terms of service</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© AutomateDev 2026. All rights reserved.</p>
+      <p data-i18n="footer_copyright">© AutomateDev 2026. All rights reserved.</p>
       <div class="Social">
-        <a href="https://www.linkedin.com/company/automatedev/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" style="color:#d107d1"></i></a>
-        <a href="https://x.com/a_mate_dev" aria-label="X"><i class="fa-brands fa-x-twitter" style="color:#d107d1"></i></a>
-        <a href="https://t.me/a_mate_dev" aria-label="Telegram"><i class="fa-brands fa-telegram" style="color:#d107d1"></i></a>
-        <a href="https://www.instagram.com/amate_dev/" aria-label="Instagram"><i class="fa-brands fa-instagram" style="color:#d107d1"></i></a>
-        <a href="https://www.tiktok.com/@amate.dev" aria-label="TikTok"><i class="fa-brands fa-tiktok" style="color:#d107d1"></i></a>
-        <a href="https://www.youtube.com/channel/UCJuZM9lDoQ2gtKn5X4FOQSQ" aria-label="YouTube"><i class="fa-brands fa-youtube" style="color:#d107d1"></i></a>
+        <a href="https://www.linkedin.com/company/automatedev/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://x.com/a_mate_dev" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://t.me/a_mate_dev" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://www.instagram.com/amate_dev/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@amate.dev" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.youtube.com/channel/UCJuZM9lDoQ2gtKn5X4FOQSQ" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
       </div>
     </div>
   </footer>
 
-  <script type="module" src="script.js"></script>
-
-  <script src="cookie-consent.js"></script>
+  <script src="translations.js?v=10"></script>
+  <script src="translations-fr.js?v=10"></script>
+  <script src="translations-es.js?v=10"></script>
+  <script src="translations-it.js?v=10"></script>
+  <script src="translations-tr.js?v=10"></script>
+  <script src="i18n.js?v=10"></script>
+  <script type="module" src="script.js?v=10"></script>
+  <script src="cookie-consent.js?v=10"></script>
   <script>
-    document.querySelectorAll('.product-detail-card').forEach(card => {
-      const link = card.querySelector('a');
-      if (!link) return;
-      const href = link.href;
-      card.style.cursor = 'pointer';
-      card.addEventListener('click', e => {
-        if (!e.target.closest('a, button')) location.href = href;
+    /* Safety net: if the reveal engine never ran (e.g. script.js failed to load),
+       ensure no content stays hidden behind the entrance animation. */
+    setTimeout(function () {
+      if (window.__revealReady) return;
+      document.querySelectorAll('.autoBlur, .reveal').forEach(function (el) {
+        el.style.transition = 'none'; el.style.opacity = '1'; el.style.transform = 'none'; el.style.filter = 'none';
       });
-    });
+    }, 1600);
   </script>
 </body>
 </html>

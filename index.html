@@ -30,25 +30,20 @@
     gtag('js', new Date());
     gtag('config', 'G-4EQMQCLQ3F');
   </script>
-  <title>Automate — Simplify Complexity</title>
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title data-i18n="meta_title_home">Automate — AI automation for small business | a-mate.dev</title>
+  <meta name="description" content="We map your workflows and build custom AI automation for small and mid-sized businesses. Free discovery call — honest advice on what's worth automating.">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-   <script type="importmap">
-{
-  "imports": {
-    "three": "https://cdn.jsdelivr.net/npm/three@v0.175.0/build/three.module.js",
-    "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.175.0/examples/jsm/"
-  }
-}
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=10">
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@v0.175.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.175.0/examples/jsm/" } }
   </script>
-
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="favicon-192.png">
 </head>
 <body>
   <div id="conteiner3D"></div>
@@ -57,257 +52,271 @@
   <div class="container">
     <header>
       <a href="index.html" class="link-reset logo-main">
-        <img src="/possible+pictures/logo/logo3_small.webp" alt="Automate Logo">
-        <h1 class="logo">Automate</h1>
+        <img src="possible+pictures/logo/logo3_small.webp" alt="Automate Logo">
+        <span class="logo">Automate</span>
       </a>
       <nav>
-        <a href="products.html">Products</a>
-        <a href="blog.html">Blog</a>
-        <a href="about.html">About</a>
-        <a href="#contact" class="nav-cta-mobile">Book a Demo →</a>
+        <a href="products.html" data-i18n="nav_solutions">Solutions</a>
+        <a href="blog.html" data-i18n="nav_blog">Blog</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="#contact" class="nav-cta-mobile" data-i18n="nav_cta">Book a free call →</a>
       </nav>
       <a href="#contact" class="link-reset nav-cta-desktop">
-        <button class="btn-main-sgn">Book a Demo <span class="arrow">→</span></button>
+        <button class="btn-main-sgn" data-i18n="nav_cta_btn">Book a free call <span class="arrow">→</span></button>
       </a>
-      <button class="nav-toggle" aria-label="Toggle menu">
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </header>
   </div>
 
   <!-- HERO -->
-  <section class="hero autoBlur">
-    <div class="layer-blur">
-      <div class="hero-content">
-        <div class="hero-tag"><span class="dot"></span> AI-Powered Business Automation</div>
-        <h1><span class="gradient-text">Simplify Complexity</span></h1>
-        <p>
-          <span id="elevate">Elevate</span> your organizational performance —<br>
-          achieve unprecedented efficiency with <span class="highlight">Automate</span>
-        </p>
-        <div class="hero-btns">
-          <a href="#contact" class="link-reset"><button class="btn-hero-sgn">Book a Free Call</button></a>
-          <a href="products.html" class="link-reset"><button class="btn-hero-build-AI">Explore Solutions ↗</button></a>
-        </div>
+  <section class="hero" data-screen-label="Home hero">
+    <div class="hero-content">
+      <div class="hero-tag"><span class="dot"></span> <span data-i18n="hero_tag">AI automation for small and mid-sized businesses</span></div>
+      <h1><span data-i18n="hero_title">Stop doing manually what a system can do for you</span></h1>
+      <p class="hero-sub" data-i18n="hero_sub">
+        We map your workflows, find what's worth automating, and build systems that run without you — so your team stops losing hours to repetitive work.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="link-reset"><button class="btn-hero-sgn" data-i18n="hero_cta_primary">Book a free 20-minute call</button></a>
+        <a href="products.html" class="link-reset"><button class="btn-hero-build-AI" data-i18n="hero_cta_secondary">See what we build ↗</button></a>
+      </div>
+      <p class="hero-note" data-i18n="hero_note">No obligation. We'll tell you honestly whether automation is the right move.</p>
+      <div class="hero-meta">
+        <span data-i18n="hm_1">Founder-led — you talk to the engineer</span>
+        <span data-i18n="hm_2">Built for the EU market</span>
+        <span data-i18n="hm_3">Fixed-price proposals</span>
+        <span data-i18n="hm_4">You own everything we build</span>
       </div>
     </div>
     <div class="hero-scroll-hint">
-      <span>Scroll to explore</span>
+      <span data-i18n="hero_scroll">Scroll to explore</span>
       <div class="scroll-line"></div>
     </div>
   </section>
 
   <!-- WHAT WE DO -->
-  <section class="what-we-do autoBlur">
-    <div class="section-label"><span class="mono-tag">// WHAT WE DO</span></div>
-    <h2 class="section-title-grad">Custom AI Automation,<br>Built Around Your Business</h2>
-    <p class="section-sub">
-      Every business is different. We start by understanding your workflows in depth — then design and build automation that fits exactly what you need, at a price that reflects exactly what that takes.
-    </p>
-    <div class="pillars-grid">
-      <div class="pillar-card">
-        <div class="pillar-icon"><i class='bx bx-search-alt-2'></i></div>
-        <h3>System Analysis</h3>
-        <p>We map your existing processes and workflows to find where automation will have the greatest real-world impact on your operations.</p>
+  <section class="what-we-do autoBlur" data-screen-label="What we do">
+    <div class="wwd-split">
+      <div class="wwd-intro">
+        <div class="section-label"><span class="mono-tag" data-i18n="wwd_label">// WHAT WE DO</span></div>
+        <h2 class="section-title" data-i18n="wwd_title">Custom AI automation, built around your business</h2>
+        <p class="section-sub" data-i18n="wwd_sub">
+          Every business is different. We start by understanding your workflows in depth — then design and build automation that fits exactly what you need, at a price that reflects exactly what that takes.
+        </p>
       </div>
-      <div class="pillar-card">
-        <div class="pillar-icon"><i class='bx bx-layer'></i></div>
-        <h3>Custom Solution Design</h3>
-        <p>Based on the analysis, we design a tailored automation architecture — no off-the-shelf packages, no bloated features you'll never use.</p>
-      </div>
-      <div class="pillar-card">
-        <div class="pillar-icon"><i class='bx bx-rocket'></i></div>
-        <h3>Build &amp; Deploy</h3>
-        <p>We build, test, and integrate the solution into your environment with zero disruption to your ongoing operations.</p>
-      </div>
-      <div class="pillar-card">
-        <div class="pillar-icon"><i class='bx bx-refresh'></i></div>
-        <h3>Continuous Improvement</h3>
-        <p>AI systems get smarter with data. We build yours to improve continuously — adapting to your growth and changing needs over time.</p>
+      <div class="wwd-rows">
+        <div class="wwd-row">
+          <span class="wwd-num">01</span>
+          <div>
+            <h3 data-i18n="wwd_c1_t">System analysis</h3>
+            <p data-i18n="wwd_c1_d">We map your existing processes and workflows to find where automation will have the greatest real-world impact on your operations.</p>
+          </div>
+        </div>
+        <div class="wwd-row">
+          <span class="wwd-num">02</span>
+          <div>
+            <h3 data-i18n="wwd_c2_t">Custom solution design</h3>
+            <p data-i18n="wwd_c2_d">Based on the analysis, we design a tailored automation architecture — no off-the-shelf packages, no bloated features you'll never use.</p>
+          </div>
+        </div>
+        <div class="wwd-row">
+          <span class="wwd-num">03</span>
+          <div>
+            <h3 data-i18n="wwd_c3_t">Build &amp; deploy</h3>
+            <p data-i18n="wwd_c3_d">We build, test, and integrate the solution into your environment with zero disruption to your ongoing operations.</p>
+          </div>
+        </div>
+        <div class="wwd-row">
+          <span class="wwd-num">04</span>
+          <div>
+            <h3 data-i18n="wwd_c4_t">Continuous improvement</h3>
+            <p data-i18n="wwd_c4_d">AI systems get smarter with data. We build yours to improve continuously — adapting to your growth and changing needs over time.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- HOW IT WORKS -->
-  <section class="how-it-works autoBlur">
-    <div class="section-label"><span class="mono-tag">// OUR PROCESS</span></div>
-    <h2 class="section-title-grad">How It Works</h2>
-    <div class="steps-grid">
-      <div class="step-card">
-        <div class="step-number mono-tag">01</div>
-        <h3>Book a Free Call</h3>
-        <p>Tell us about your business and the challenges you're facing. No commitment — just an open conversation to see if we're the right fit.</p>
-      </div>
-      <div class="step-connector">→</div>
-      <div class="step-card">
-        <div class="step-number mono-tag">02</div>
-        <h3>Workflow Analysis</h3>
-        <p>For a one-time flat fee, we conduct a thorough analysis of your systems and workflows — identifying the best automation opportunities and full project scope.</p>
-      </div>
-      <div class="step-connector">→</div>
-      <div class="step-card">
-        <div class="step-number mono-tag">03</div>
-        <h3>Custom Proposal</h3>
-        <p>You receive a detailed, transparent proposal priced specifically for your project's scale and complexity. No packages. No hidden fees.</p>
-      </div>
-      <div class="step-connector">→</div>
-      <div class="step-card">
-        <div class="step-number mono-tag">04</div>
-        <h3>Build &amp; Deliver</h3>
-        <p>We build, test, and hand over your solution. You own it fully — and we make sure you understand exactly how it works.</p>
-      </div>
-    </div>
-    <div style="text-align:center; margin-top:3rem;">
-      <a href="#contact" class="link-reset"><button class="btn-learn-more">Start With a Free Call →</button></a>
-    </div>
-  </section>
-
-  <!-- SOLUTIONS OVERVIEW -->
-  <section class="product-examples autoBlur">
-    <div class="section-label"><span class="mono-tag">// SOLUTIONS</span></div>
-    <h1>What We Can Automate</h1>
-    <p class="section-sub">From content and customer interactions to finance and security —<br>if it's repetitive, rule-based, or data-driven, it can be automated.</p>
-    <a href="products.html" class="link-reset"><button class="btn-learn-more">View All Solutions</button></a>
-    <div class="product-cards">
-      <div class="product-card">
-        <img src="/possible+pictures/it_con.webp" class="product-image" alt="IT Consultancy">
-        <div class="product-intro-card">
-          <h3>IT Consultancy</h3>
-          <p>Strategic technology advisory — from infrastructure audits to digital transformation roadmaps.</p>
+  <section class="how-it-works autoBlur" data-screen-label="How it works">
+    <div class="hiw-inner">
+      <div class="hiw-head">
+        <div>
+          <div class="section-label"><span class="mono-tag" data-i18n="hiw_label">// OUR PROCESS</span></div>
+          <h2 class="section-title" style="margin-bottom:0" data-i18n="hiw_title">How it works</h2>
         </div>
-        <a href="products.html#consulting" class="link-reset"><button class="card-learn-more">↬</button></a>
+        <a href="#contact" class="link-reset"><button class="btn-learn-more" style="margin-top:0" data-i18n="hiw_cta">Start with a free call <span class="arrow">→</span></button></a>
       </div>
-      <div class="product-card">
-        <img src="/possible+pictures/business-plan.webp" class="product-image" alt="Business Plan Development">
-        <div class="product-intro-card">
-          <h3>Business Plan Development</h3>
-          <p>Investor-ready business plans with market analysis and financial projections.</p>
+      <div class="steps-grid">
+        <div class="step-card">
+          <span class="step-number">01</span>
+          <h3 data-i18n="hiw_s1_t">Book a free call</h3>
+          <p data-i18n="hiw_s1_d">Tell us about your business and the challenges you're facing. No commitment — just an open conversation to see if we're the right fit.</p>
+          <span class="step-price mono-tag" data-i18n="hiw_s1_price">£0 — always free</span>
         </div>
-        <a href="products.html#consulting" class="link-reset"><button class="card-learn-more">↬</button></a>
-      </div>
-      <div class="product-card">
-        <img src="/possible+pictures/fraud.webp" class="product-image" alt="Fraud Detection">
-        <div class="product-intro-card">
-          <h3>Fraud Detection</h3>
-          <p>Real-time anomaly detection that catches fraud patterns before damage is done.</p>
+        <div class="step-card">
+          <span class="step-number">02</span>
+          <h3 data-i18n="hiw_s2_t">Workflow analysis</h3>
+          <p data-i18n="hiw_s2_d">For a one-time flat fee, we conduct a thorough analysis of your systems and workflows — identifying the best automation opportunities and full project scope.</p>
+          <span class="step-price mono-tag" data-i18n="hiw_s2_price">£500–£1,500 flat fee</span>
         </div>
-        <a href="products.html#intelligence" class="link-reset"><button class="card-learn-more">↬</button></a>
-      </div>
-      <div class="product-card">
-        <img src="/possible+pictures/trarget-detection.webp" class="product-image" alt="Threat Detection">
-        <div class="product-intro-card">
-          <h3>Threat Detection</h3>
-          <p>Continuous behavioral and network monitoring with automated incident response.</p>
+        <div class="step-card">
+          <span class="step-number">03</span>
+          <h3 data-i18n="hiw_s3_t">Custom proposal</h3>
+          <p data-i18n="hiw_s3_d">You receive a detailed, transparent proposal priced specifically for your project's scale and complexity. No packages. No hidden fees.</p>
+          <span class="step-price mono-tag" data-i18n="hiw_s3_price">Fixed price — no surprises</span>
         </div>
-        <a href="products.html#intelligence" class="link-reset"><button class="card-learn-more">↬</button></a>
-      </div>
-      <div class="product-card">
-        <img src="/possible+pictures/AI-tradebot.webp" class="product-image" alt="AI Trading">
-        <div class="product-intro-card">
-          <h3>AI-Powered Trading</h3>
-          <p>Quantitative strategy automation with real-time market signal processing.</p>
+        <div class="step-card">
+          <span class="step-number">04</span>
+          <h3 data-i18n="hiw_s4_t">Build &amp; deliver</h3>
+          <p data-i18n="hiw_s4_d">We build, test, and hand over your solution. You own it fully — and we make sure you understand exactly how it works.</p>
+          <span class="step-price mono-tag" data-i18n="hiw_s4_price">Builds from £3,000</span>
         </div>
-        <a href="products.html#operations" class="link-reset"><button class="card-learn-more">↬</button></a>
-      </div>
-      <div class="product-card">
-        <img src="/possible+pictures/inventory-managment.webp" class="product-image" alt="Inventory">
-        <div class="product-intro-card">
-          <h3>Inventory Management</h3>
-          <p>Demand forecasting, automated reordering, and supplier risk analysis.</p>
-        </div>
-        <a href="products.html#operations" class="link-reset"><button class="card-learn-more">↬</button></a>
-      </div>
-      <div class="product-card">
-        <img src="/possible+pictures/AI-chatbot.webp" class="product-image" alt="AI Chatbots">
-        <div class="product-intro-card">
-          <h3>AI Chatbots</h3>
-          <p>Intelligent conversational agents trained on your business data and brand voice.</p>
-        </div>
-        <a href="products.html#intelligence" class="link-reset"><button class="card-learn-more">↬</button></a>
-      </div>
-      <div class="product-card">
-        <img src="/possible+pictures/api_dev.webp" class="product-image" alt="API and Web Development">
-        <div class="product-intro-card">
-          <h3>API &amp; Web Development</h3>
-          <p>Custom APIs and interactive web apps built for performance, scalability, and your workflows.</p>
-        </div>
-        <a href="products.html#consulting" class="link-reset"><button class="card-learn-more">↬</button></a>
-      </div>
-      <div class="product-card">
-        <img src="/possible+pictures/socialmedia-managment.webp" class="product-image" alt="Social Media">
-        <div class="product-intro-card">
-          <h3>Social Media Management</h3>
-          <p>Content generation, scheduling, and cross-platform analytics — fully automated.</p>
-        </div>
-        <a href="products.html#content" class="link-reset"><button class="card-learn-more">↬</button></a>
-      </div>
-      <div class="product-card">
-        <img src="/possible+pictures/Podcast-1.webp" class="product-image" alt="Podcast Generation">
-        <div class="product-intro-card">
-          <h3>Podcast Generation</h3>
-          <p>Script creation, AI voice synthesis, and automated publishing pipelines.</p>
-        </div>
-        <a href="products.html#content" class="link-reset"><button class="card-learn-more">↬</button></a>
-      </div>
-      <div class="product-card">
-        <img src="/possible+pictures/text-generation.webp" class="product-image" alt="Image Generation">
-        <div class="product-intro-card">
-          <h3>Image Generation</h3>
-          <p>On-demand brand-aligned visuals, banners, and creative assets at scale.</p>
-        </div>
-        <a href="products.html#content" class="link-reset"><button class="card-learn-more">↬</button></a>
       </div>
     </div>
   </section>
 
-  <!-- EXPLORE SECTIONS -->
-  <section class="products-intro autoBlur">
-    <div class="item-cards">
-      <a href="products.html" class="link-reset item-intro item-courses" style="cursor:pointer;">
-        <div class="item-text">
-          <h2>Our Solutions</h2>
-          <p>The full range of automation capabilities we design and build for your business.</p>
-          <span class="btn-item">Explore →</span>
+  <!-- SOLUTIONS INDEX -->
+  <section class="product-examples autoBlur" id="solutions" data-screen-label="Solutions index">
+    <div class="sol-inner">
+      <div class="sol-head">
+        <div>
+          <div class="section-label"><span class="mono-tag" data-i18n="sol_label">// SOLUTIONS</span></div>
+          <h2 class="section-title" data-i18n="sol_title">What we can automate</h2>
+          <p class="section-sub" data-i18n="sol_sub">From content and customer interactions to finance and security — if it's repetitive, rule-based, or data-driven, it can be automated.</p>
         </div>
-      </a>
-      <a href="products.html#content" class="link-reset item-intro item-genai" style="cursor:pointer;">
-        <div class="item-text">
-          <h2>Generative AI</h2>
-          <p>Content, visuals, and voice — generative pipelines built for real production use.</p>
-          <span class="btn-item">Learn More →</span>
+        <a href="products.html" class="link-reset"><button class="btn-learn-more" style="margin-top:0" data-i18n="sol_view_all">View all solutions <span class="arrow">→</span></button></a>
+      </div>
+
+      <div class="sol-index">
+        <div class="sol-group">
+          <div class="sol-group-label"><span class="mono-tag" data-i18n="footer_operations">Operations &amp; finance</span></div>
+          <a href="products.html#operations" class="sol-row">
+            <span class="sol-row-num">01</span>
+            <h3 data-i18n="sol_wf_t">Workflow &amp; Back-office Automation</h3>
+            <p data-i18n="sol_wf_d">Invoices, data entry, email triage, reporting — connected across the tools you already use.</p>
+            <span class="sol-row-arrow">→</span>
+          </a>
+          <a href="products.html#operations" class="sol-row">
+            <span class="sol-row-num">02</span>
+            <h3 data-i18n="sol_c6_t">Inventory Management</h3>
+            <p data-i18n="sol_c6_d">Demand forecasting, automated reordering, and supplier risk analysis.</p>
+            <span class="sol-row-arrow">→</span>
+          </a>
+          <a href="products.html#operations" class="sol-row">
+            <span class="sol-row-num">03</span>
+            <h3 data-i18n="sol_c5_t">AI-Powered Trading</h3>
+            <p data-i18n="sol_c5_d">Quantitative strategy automation with real-time market signal processing.</p>
+            <span class="sol-row-arrow">→</span>
+          </a>
         </div>
-      </a>
-      <a href="products.html#intelligence" class="link-reset item-intro item-smart" style="cursor:pointer;">
-        <div class="item-text">
-          <h2>Decision Intelligence</h2>
-          <p>AI that turns your raw data into clear, actionable business decisions — automatically.</p>
-          <span class="btn-item">Discover →</span>
+
+        <div class="sol-group">
+          <div class="sol-group-label"><span class="mono-tag" data-i18n="footer_intelligence">Intelligence &amp; security</span></div>
+          <a href="products.html#intelligence" class="sol-row">
+            <span class="sol-row-num">04</span>
+            <h3 data-i18n="sol_c7_t">AI Chatbots</h3>
+            <p data-i18n="sol_c7_d">Intelligent conversational agents trained on your business data and brand voice.</p>
+            <span class="sol-row-arrow">→</span>
+          </a>
+          <a href="products.html#intelligence" class="sol-row">
+            <span class="sol-row-num">05</span>
+            <h3 data-i18n="sol_c3_t">Fraud Detection</h3>
+            <p data-i18n="sol_c3_d">Real-time anomaly detection that catches fraud patterns before damage is done.</p>
+            <span class="sol-row-arrow">→</span>
+          </a>
+          <a href="products.html#intelligence" class="sol-row">
+            <span class="sol-row-num">06</span>
+            <h3 data-i18n="sol_c4_t">Threat Detection</h3>
+            <p data-i18n="sol_c4_d">Continuous behavioral and network monitoring with automated incident response.</p>
+            <span class="sol-row-arrow">→</span>
+          </a>
         </div>
-      </a>
-      <a href="blog.html" class="link-reset item-intro item-blog" style="cursor:pointer;">
-        <div class="item-text">
-          <h2>Blog</h2>
-          <p>Practical guides and insights on AI automation — written by the founder.</p>
-          <span class="btn-item">Read Articles →</span>
+
+        <div class="sol-group">
+          <div class="sol-group-label"><span class="mono-tag" data-i18n="footer_content">Content &amp; media</span></div>
+          <a href="products.html#content" class="sol-row">
+            <span class="sol-row-num">07</span>
+            <h3 data-i18n="sol_c9_t">Social Media Management</h3>
+            <p data-i18n="sol_c9_d">Content generation, scheduling, and cross-platform analytics — fully automated.</p>
+            <span class="sol-row-arrow">→</span>
+          </a>
+          <a href="products.html#content" class="sol-row">
+            <span class="sol-row-num">08</span>
+            <h3 data-i18n="sol_c10_t">Podcast Generation</h3>
+            <p data-i18n="sol_c10_d">Script creation, AI voice synthesis, and automated publishing pipelines.</p>
+            <span class="sol-row-arrow">→</span>
+          </a>
+          <a href="products.html#content" class="sol-row">
+            <span class="sol-row-num">09</span>
+            <h3 data-i18n="sol_c11_t">Image Generation</h3>
+            <p data-i18n="sol_c11_d">On-demand brand-aligned visuals, banners, and creative assets at scale.</p>
+            <span class="sol-row-arrow">→</span>
+          </a>
         </div>
-      </a>
+
+        <div class="sol-group">
+          <div class="sol-group-label"><span class="mono-tag" data-i18n="sgl_consulting">Consulting &amp; development</span></div>
+          <a href="products.html#consulting" class="sol-row">
+            <span class="sol-row-num">10</span>
+            <h3 data-i18n="sol_c1_t">IT Consultancy</h3>
+            <p data-i18n="sol_c1_d">Strategic technology advisory — from infrastructure audits to a clear technology roadmap.</p>
+            <span class="sol-row-arrow">→</span>
+          </a>
+          <a href="products.html#consulting" class="sol-row">
+            <span class="sol-row-num">11</span>
+            <h3 data-i18n="sol_c8_t">API &amp; Web Development</h3>
+            <p data-i18n="sol_c8_d">Custom APIs and interactive web apps built for performance, scalability, and your workflows.</p>
+            <span class="sol-row-arrow">→</span>
+          </a>
+          <a href="products.html#consulting" class="sol-row">
+            <span class="sol-row-num">12</span>
+            <h3 data-i18n="sol_c2_t">Business Plan Development</h3>
+            <p data-i18n="sol_c2_d">Investor-ready business plans with market analysis and financial projections.</p>
+            <span class="sol-row-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER STRIP -->
+  <section class="founder-strip autoBlur" data-screen-label="Founder strip">
+    <div class="founder-strip-inner">
+      <img src="possible+pictures/UDG_avatar.webp" alt="U. Deniz GELES, founder of Automate" class="founder-strip-avatar">
+      <div class="founder-strip-text">
+        <h2 data-i18n="home_f_title">Founder-led by design.</h2>
+        <p data-i18n="home_f_p">No account managers, no handoffs. You work directly with U. Deniz GELES — the engineer who analyses your workflows, designs your system, and builds it.</p>
+      </div>
+      <a href="about.html" class="link-reset"><button class="btn-learn-more" style="margin-top:0" data-i18n="home_f_cta">Meet the founder <span class="arrow">→</span></button></a>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="contact-us autoBlur" id="contact">
+  <section class="contact-us autoBlur" id="contact" data-screen-label="Contact">
     <div class="contact-container">
-      <div class="section-label" style="margin-bottom:0.75rem"><span class="mono-tag">// GET IN TOUCH</span></div>
-      <h1>Let's Talk</h1>
-      <p class="contact-sub">Book a free call or send a message — we'll get back to you within 24 hours.</p>
-      <form id="contact-form" action="https://script.google.com/macros/s/AKfycbwxsoDf2PAlgyDQ-khyeJyQm9h24CQYNUzliQ7zP9giIWdlTJo6onARhT35tnd-5HiE3Q/exec" method="POST">
-        <input class="contact-info" type="text" id="name" placeholder="Your Name" name="name" required />
-        <input class="contact-info" type="email" placeholder="Email Address" id="email" name="email" required />
-        <input class="contact-info" placeholder="Phone Number (optional)" id="number" name="number" />
-        <textarea class="contact-info" placeholder="Tell us about your business and what you'd like to automate..." id="message" name="message" rows="5" required></textarea>
-        <button class="form-response" type="submit">Send Message</button>
-      </form>
-      <div id="popupMessage" class="popup"></div>
+      <div class="contact-left">
+        <div class="section-label"><span class="mono-tag" data-i18n="contact_label">// GET IN TOUCH</span></div>
+        <h2 data-i18n="contact_title">Let's talk</h2>
+        <p class="contact-sub" data-i18n="contact_sub">Book a free call or send a message — we'll get back to you within 24 hours.</p>
+        <ul class="contact-points">
+          <li><span class="mono-tag">01</span><span data-i18n="cp_1">A reply within 24 hours — from the founder, not a bot.</span></li>
+          <li><span class="mono-tag">02</span><span data-i18n="cp_2">A free 20-minute call to understand what you do today.</span></li>
+          <li><span class="mono-tag">03</span><span data-i18n="cp_3">Honest advice — even if that advice is "don't automate yet."</span></li>
+        </ul>
+      </div>
+      <div>
+        <form id="contact-form" action="https://script.google.com/macros/s/AKfycbwxsoDf2PAlgyDQ-khyeJyQm9h24CQYNUzliQ7zP9giIWdlTJo6onARhT35tnd-5HiE3Q/exec" method="POST">
+          <input class="contact-info" type="text" id="name" placeholder="Your name" data-i18n-ph="ph_name" name="name" required />
+          <input class="contact-info" type="email" placeholder="Email address" data-i18n-ph="ph_email" id="email" name="email" required />
+          <input class="contact-info" placeholder="Phone number (optional)" data-i18n-ph="ph_phone" id="number" name="number" />
+          <textarea class="contact-info" placeholder="Tell us about your business and what you'd like to automate..." data-i18n-ph="ph_message" id="message" name="message" rows="5" required></textarea>
+          <button class="form-response" type="submit" data-i18n="form_send">Send message</button>
+        </form>
+        <div id="popupMessage" class="popup"></div>
+      </div>
     </div>
   </section>
 
@@ -316,45 +325,59 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <h2 class="logo">Automate</h2>
-        <p>Custom AI automation for ambitious businesses.</p>
-
+        <p data-i18n="footer_tagline">Custom AI automation for ambitious businesses.</p>
       </div>
       <div class="footer-links">
         <div class="footer-col">
-          <span class="footer-col-title">Solutions</span>
-          <a href="products.html">All Products</a>
-          <a href="products.html#content">Content &amp; Media</a>
-          <a href="products.html#intelligence">Intelligence &amp; Security</a>
-          <a href="products.html#operations">Operations &amp; Finance</a>
+          <span class="footer-col-title" data-i18n="footer_col_solutions">Solutions</span>
+          <a href="products.html" data-i18n="footer_all_solutions">All solutions</a>
+          <a href="products.html#content" data-i18n="footer_content">Content &amp; media</a>
+          <a href="products.html#intelligence" data-i18n="footer_intelligence">Intelligence &amp; security</a>
+          <a href="products.html#operations" data-i18n="footer_operations">Operations &amp; finance</a>
         </div>
         <div class="footer-col">
-          <span class="footer-col-title">Company</span>
-          <a href="about.html">About</a>
-          <a href="blog.html">Blog</a>
-          <a href="#contact">Contact</a>
+          <span class="footer-col-title" data-i18n="footer_col_company">Company</span>
+          <a href="about.html" data-i18n="footer_about">About</a>
+          <a href="blog.html" data-i18n="footer_blog">Blog</a>
+          <a href="#contact" data-i18n="footer_contact">Contact</a>
         </div>
         <div class="footer-col">
-          <span class="footer-col-title">Legal</span>
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="terms.html">Terms of Service</a>
+          <span class="footer-col-title" data-i18n="footer_col_legal">Legal</span>
+          <a href="privacy.html" data-i18n="footer_privacy">Privacy policy</a>
+          <a href="terms.html" data-i18n="footer_terms">Terms of service</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© AutomateDev 2026. All rights reserved.</p>
+      <p data-i18n="footer_copyright">© AutomateDev 2026. All rights reserved.</p>
       <div class="Social">
-        <a href="https://www.linkedin.com/company/automatedev/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" style="color:#d107d1"></i></a>
-        <a href="https://x.com/a_mate_dev" aria-label="X"><i class="fa-brands fa-x-twitter" style="color:#d107d1"></i></a>
-        <a href="https://t.me/a_mate_dev" aria-label="Telegram"><i class="fa-brands fa-telegram" style="color:#d107d1"></i></a>
-        <a href="https://www.instagram.com/amate_dev/" aria-label="Instagram"><i class="fa-brands fa-instagram" style="color:#d107d1"></i></a>
-        <a href="https://www.tiktok.com/@amate.dev" aria-label="TikTok"><i class="fa-brands fa-tiktok" style="color:#d107d1"></i></a>
-        <a href="https://www.youtube.com/channel/UCJuZM9lDoQ2gtKn5X4FOQSQ" aria-label="YouTube"><i class="fa-brands fa-youtube" style="color:#d107d1"></i></a>
+        <a href="https://www.linkedin.com/company/automatedev/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://x.com/a_mate_dev" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://t.me/a_mate_dev" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://www.instagram.com/amate_dev/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@amate.dev" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.youtube.com/channel/UCJuZM9lDoQ2gtKn5X4FOQSQ" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
       </div>
     </div>
   </footer>
 
-  <script type="module" src="script.js"></script>
-
-  <script src="cookie-consent.js"></script>
+  <script src="translations.js?v=10"></script>
+  <script src="translations-fr.js?v=10"></script>
+  <script src="translations-es.js?v=10"></script>
+  <script src="translations-it.js?v=10"></script>
+  <script src="translations-tr.js?v=10"></script>
+  <script src="i18n.js?v=10"></script>
+  <script type="module" src="script.js?v=10"></script>
+  <script src="cookie-consent.js?v=10"></script>
+  <script>
+    /* Safety net: if the reveal engine never ran (e.g. script.js failed to load),
+       ensure no content stays hidden behind the entrance animation. */
+    setTimeout(function () {
+      if (window.__revealReady) return;
+      document.querySelectorAll('.autoBlur, .reveal').forEach(function (el) {
+        el.style.transition = 'none'; el.style.opacity = '1'; el.style.transform = 'none'; el.style.filter = 'none';
+      });
+    }, 1600);
+  </script>
 </body>
 </html>

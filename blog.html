@@ -30,19 +30,20 @@
     gtag('js', new Date());
     gtag('config', 'G-4EQMQCLQ3F');
   </script>
-  <title>Blog — Automate</title>
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title data-i18n="meta_title_blog">Blog — AI automation insights | Automate</title>
+  <meta name="description" content="Practical guides, breakdowns, and honest perspectives on AI automation for small and mid-sized businesses — written by the founder.">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=10">
   <script type="importmap">
     { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@v0.175.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.175.0/examples/jsm/" } }
   </script>
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="favicon-192.png">
 </head>
 <body>
   <div id="conteiner3D"></div>
@@ -51,69 +52,71 @@
   <div class="container">
     <header>
       <a href="index.html" class="link-reset logo-main">
-        <img src="/possible+pictures/logo/logo3_small.webp" alt="Automate Logo">
-        <h1 class="logo">Automate</h1>
+        <img src="possible+pictures/logo/logo3_small.webp" alt="Automate Logo">
+        <span class="logo">Automate</span>
       </a>
       <nav>
-        <a href="products.html">Products</a>
-        <a href="blog.html" class="nav-active">Blog</a>
-        <a href="about.html">About</a>
-        <a href="index.html#contact" class="nav-cta-mobile">Book a Demo →</a>
+        <a href="products.html" data-i18n="nav_solutions">Solutions</a>
+        <a href="blog.html" class="nav-active" data-i18n="nav_blog">Blog</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="index.html#contact" class="nav-cta-mobile" data-i18n="nav_cta">Book a free call →</a>
       </nav>
       <a href="index.html#contact" class="link-reset nav-cta-desktop">
-        <button class="btn-main-sgn">Book a Demo <span class="arrow">→</span></button>
+        <button class="btn-main-sgn" data-i18n="nav_cta_btn">Book a free call <span class="arrow">→</span></button>
       </a>
-      <button class="nav-toggle" aria-label="Toggle menu">
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </header>
   </div>
 
   <!-- BLOG HERO -->
-  <section class="page-hero autoBlur">
+  <section class="page-hero autoBlur" data-screen-label="Blog hero">
     <div class="page-hero-content">
-      <div class="section-label"><span class="mono-tag">// INSIGHTS & GUIDES</span></div>
-      <h1>The <span class="gradient-text">Automate</span> Blog</h1>
-      <p>Practical guides, breakdowns, and honest perspectives on AI automation</p>
+      <div class="section-label"><span class="mono-tag" data-i18n="blog_label">// INSIGHTS &amp; GUIDES</span></div>
+      <h1 data-i18n="blog_title">The <span class="gradient-text">Automate</span> blog</h1>
+      <p data-i18n="blog_sub">Practical guides, breakdowns, and honest perspectives on AI automation</p>
     </div>
   </section>
-
-
 
   <!-- FILTER BAR -->
   <section class="blog-filters autoBlur">
     <div class="filter-bar">
-      <button class="filter-btn filter-active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="generative-ai">Generative AI</button>
-      <button class="filter-btn" data-filter="automation">Automation</button>
-      <button class="filter-btn" data-filter="guides">Guides</button>
-      <button class="filter-btn" data-filter="industry">Industry</button>
+      <button class="filter-btn filter-active" data-filter="all" data-i18n="filter_all">All</button>
+      <button class="filter-btn" data-filter="generative-ai" data-i18n="filter_genai">Generative AI</button>
+      <button class="filter-btn" data-filter="automation" data-i18n="filter_automation">Automation</button>
+      <button class="filter-btn" data-filter="guides" data-i18n="filter_guides">Guides</button>
+      <button class="filter-btn" data-filter="industry" data-i18n="filter_industry">Industry</button>
     </div>
   </section>
 
-  <!-- ARTICLE GRID -->
-  <section class="blog-grid-section autoBlur" id="articles">
+  <!-- ARTICLE GRID (populated by cms.js) -->
+  <section class="blog-grid-section autoBlur" id="articles" data-screen-label="Article grid">
     <div class="blog-grid" id="blog-grid">
 
-     
+
 
     </div>
   </section>
 
   <!-- NEWSLETTER / NOTIFY -->
-  <section class="newsletter-section autoBlur">
+  <section class="newsletter-section autoBlur" data-screen-label="Newsletter">
     <div class="newsletter-box">
-      <div class="section-label" style="margin-bottom:0.75rem"><span class="mono-tag">// STAY IN THE LOOP</span></div>
-      <h2>Get new articles <span class="gradient-text">delivered.</span></h2>
-      <p>Practical AI automation insights — no noise, no spam. Just useful content when it's published.</p>
-      <form class="newsletter-form" id="newsletter-form"
-            action="https://script.google.com/macros/s/AKfycbwxsoDf2PAlgyDQ-khyeJyQm9h24CQYNUzliQ7zP9giIWdlTJo6onARhT35tnd-5HiE3Q/exec"
-            method="POST">
-        <input type="hidden" name="type" value="newsletter">
-        <input type="email" class="newsletter-input" name="email" placeholder="your@email.com" required />
-        <button type="submit" class="btn-item">Subscribe <span class="arrow">→</span></button>
-      </form>
-      <div id="newsletter-popup" class="popup"></div>
+      <div>
+        <div class="section-label" style="margin-bottom:0.75rem"><span class="mono-tag" data-i18n="nl_label">// STAY IN THE LOOP</span></div>
+        <h2 data-i18n="nl_title">Get new articles <span class="gradient-text">delivered.</span></h2>
+        <p data-i18n="nl_sub">Practical AI automation insights — no noise, no spam. Just useful content when it's published.</p>
+      </div>
+      <div>
+        <form class="newsletter-form" id="newsletter-form"
+              action="https://script.google.com/macros/s/AKfycbwxsoDf2PAlgyDQ-khyeJyQm9h24CQYNUzliQ7zP9giIWdlTJo6onARhT35tnd-5HiE3Q/exec"
+              method="POST">
+          <input type="hidden" name="type" value="newsletter">
+          <input type="email" class="newsletter-input" name="email" placeholder="your@email.com" required />
+          <button type="submit" class="btn-item" data-i18n="nl_btn">Subscribe <span class="arrow">→</span></button>
+        </form>
+        <div id="newsletter-popup" class="popup"></div>
+      </div>
     </div>
   </section>
 
@@ -122,45 +125,60 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <h2 class="logo">Automate</h2>
-        <p>Custom AI automation for ambitious businesses.</p>
+        <p data-i18n="footer_tagline">Custom AI automation for ambitious businesses.</p>
       </div>
       <div class="footer-links">
         <div class="footer-col">
-          <span class="footer-col-title">Solutions</span>
-          <a href="products.html">All Products</a>
-          <a href="products.html#content">Content &amp; Media</a>
-          <a href="products.html#intelligence">Intelligence &amp; Security</a>
-          <a href="products.html#operations">Operations &amp; Finance</a>
+          <span class="footer-col-title" data-i18n="footer_col_solutions">Solutions</span>
+          <a href="products.html" data-i18n="footer_all_solutions">All solutions</a>
+          <a href="products.html#content" data-i18n="footer_content">Content &amp; media</a>
+          <a href="products.html#intelligence" data-i18n="footer_intelligence">Intelligence &amp; security</a>
+          <a href="products.html#operations" data-i18n="footer_operations">Operations &amp; finance</a>
         </div>
         <div class="footer-col">
-          <span class="footer-col-title">Company</span>
-          <a href="about.html">About</a>
-          <a href="blog.html">Blog</a>
-          <a href="index.html#contact">Contact</a>
+          <span class="footer-col-title" data-i18n="footer_col_company">Company</span>
+          <a href="about.html" data-i18n="footer_about">About</a>
+          <a href="blog.html" data-i18n="footer_blog">Blog</a>
+          <a href="index.html#contact" data-i18n="footer_contact">Contact</a>
         </div>
         <div class="footer-col">
-          <span class="footer-col-title">Legal</span>
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="terms.html">Terms of Service</a>
+          <span class="footer-col-title" data-i18n="footer_col_legal">Legal</span>
+          <a href="privacy.html" data-i18n="footer_privacy">Privacy policy</a>
+          <a href="terms.html" data-i18n="footer_terms">Terms of service</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© AutomateDev 2026. All rights reserved.</p>
+      <p data-i18n="footer_copyright">© AutomateDev 2026. All rights reserved.</p>
       <div class="Social">
-        <a href="https://www.linkedin.com/company/automatedev/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" style="color:#d107d1"></i></a>
-        <a href="https://x.com/a_mate_dev" aria-label="X"><i class="fa-brands fa-x-twitter" style="color:#d107d1"></i></a>
-        <a href="https://t.me/a_mate_dev" aria-label="Telegram"><i class="fa-brands fa-telegram" style="color:#d107d1"></i></a>
-        <a href="https://www.instagram.com/amate_dev/" aria-label="Instagram"><i class="fa-brands fa-instagram" style="color:#d107d1"></i></a>
-        <a href="https://www.tiktok.com/@amate.dev" aria-label="TikTok"><i class="fa-brands fa-tiktok" style="color:#d107d1"></i></a>
-        <a href="https://www.youtube.com/channel/UCJuZM9lDoQ2gtKn5X4FOQSQ" aria-label="YouTube"><i class="fa-brands fa-youtube" style="color:#d107d1"></i></a>
+        <a href="https://www.linkedin.com/company/automatedev/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://x.com/a_mate_dev" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://t.me/a_mate_dev" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://www.instagram.com/amate_dev/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@amate.dev" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.youtube.com/channel/UCJuZM9lDoQ2gtKn5X4FOQSQ" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
       </div>
     </div>
   </footer>
 
-  <script type="module" src="script.js"></script>
-  <script src="cms.js"></script>
-
-  <script src="cookie-consent.js"></script>
+  <script src="translations.js?v=10"></script>
+  <script src="translations-fr.js?v=10"></script>
+  <script src="translations-es.js?v=10"></script>
+  <script src="translations-it.js?v=10"></script>
+  <script src="translations-tr.js?v=10"></script>
+  <script src="i18n.js?v=10"></script>
+  <script type="module" src="script.js?v=10"></script>
+  <script src="cms.js?v=10"></script>
+  <script src="cookie-consent.js?v=10"></script>
+  <script>
+    /* Safety net: if the reveal engine never ran (e.g. script.js failed to load),
+       ensure no content stays hidden behind the entrance animation. */
+    setTimeout(function () {
+      if (window.__revealReady) return;
+      document.querySelectorAll('.autoBlur, .reveal').forEach(function (el) {
+        el.style.transition = 'none'; el.style.opacity = '1'; el.style.transform = 'none'; el.style.filter = 'none';
+      });
+    }, 1600);
+  </script>
 </body>
 </html>

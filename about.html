@@ -30,19 +30,20 @@
     gtag('js', new Date());
     gtag('config', 'G-4EQMQCLQ3F');
   </script>
-  <title>About — Automate</title>
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title data-i18n="meta_title_about">About — Automate | Founder-led AI automation</title>
+  <meta name="description" content="Automate is a founder-led AI automation practice. You work directly with the engineer who analyses, designs, and builds your system — no middlemen.">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=10">
   <script type="importmap">
     { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@v0.175.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.175.0/examples/jsm/" } }
   </script>
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="favicon-192.png">
 </head>
 <body>
   <div id="conteiner3D"></div>
@@ -51,145 +52,149 @@
   <div class="container">
     <header>
       <a href="index.html" class="link-reset logo-main">
-        <img src="/possible+pictures/logo/logo3_small.webp" alt="Automate Logo">
-        <h1 class="logo">Automate</h1>
+        <img src="possible+pictures/logo/logo3_small.webp" alt="Automate Logo">
+        <span class="logo">Automate</span>
       </a>
       <nav>
-        <a href="products.html">Products</a>
-        <a href="blog.html">Blog</a>
-        <a href="about.html" class="nav-active">About</a>
-        <a href="index.html#contact" class="nav-cta-mobile">Book a Demo →</a>
+        <a href="products.html" data-i18n="nav_solutions">Solutions</a>
+        <a href="blog.html" data-i18n="nav_blog">Blog</a>
+        <a href="about.html" class="nav-active" data-i18n="nav_about">About</a>
+        <a href="index.html#contact" class="nav-cta-mobile" data-i18n="nav_cta">Book a free call →</a>
       </nav>
       <a href="index.html#contact" class="link-reset nav-cta-desktop">
-        <button class="btn-main-sgn">Book a Demo <span class="arrow">→</span></button>
+        <button class="btn-main-sgn" data-i18n="nav_cta_btn">Book a free call <span class="arrow">→</span></button>
       </a>
-      <button class="nav-toggle" aria-label="Toggle menu">
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </header>
   </div>
 
   <!-- PAGE HERO -->
-  <section class="page-hero autoBlur">
+  <section class="page-hero autoBlur" data-screen-label="About hero">
     <div class="page-hero-content">
-      <div class="section-label"><span class="mono-tag">// WHO WE ARE</span></div>
-      <h1>Built to Make AI<br><span class="gradient-text">Accessible to Every Business</span></h1>
-      <p>Automate was founded on a simple belief: powerful AI automation shouldn't be reserved<br>for large enterprises with big budgets. Every business deserves access to tools that save time,<br>reduce costs, and unlock real competitive advantage.</p>
+      <div class="section-label"><span class="mono-tag" data-i18n="about_label">// WHO WE ARE</span></div>
+      <h1 data-i18n="about_title">Built to make AI <span class="gradient-text">accessible to every business</span></h1>
+      <p data-i18n="about_sub">Automate was founded on a simple belief: powerful AI automation shouldn't be reserved for large enterprises with big budgets. Every business deserves access to tools that save time, reduce costs, and unlock real competitive advantage.</p>
     </div>
   </section>
 
   <!-- MISSION -->
-  <section class="mission-section autoBlur">
+  <section class="mission-section autoBlur" data-screen-label="Mission">
     <div class="mission-split">
       <div class="mission-left">
-        <div class="section-label"><span class="mono-tag">// OUR MISSION</span></div>
-        <h2>Revolutionizing daily routines with automation that <span class="gradient-text">actually fits your reality.</span></h2>
+        <div class="section-label"><span class="mono-tag" data-i18n="mission_label">// OUR MISSION</span></div>
+        <h2 data-i18n="mission_title">Automation that <span class="gradient-text">actually fits your reality.</span></h2>
       </div>
       <div class="mission-right">
-        <p>We're building the infrastructure layer for the intelligent small and mid-sized enterprise. Our mission is to deliver effortless efficiency — transforming how organizations work, create, and compete — without forcing them into rigid packages or unnecessary complexity.</p>
-        <p>By simplifying complex tasks, we free your most valuable resource: human attention. Our solutions are designed to integrate naturally into your day — not disrupt it. We make advanced automation approachable, putting powerful tools at your fingertips so your team can move faster, smarter, and with greater precision.</p>
-        <p>Every proposal we make is based on a real understanding of your business. Every price we quote reflects the actual scope of your project. No surprises.</p>
-        <a href="index.html#contact" class="link-reset"><button class="btn-learn-more" style="margin-top:2rem">Start the Conversation →</button></a>
+        <p data-i18n="mission_p1">We build automation for small and mid-sized businesses. Our mission is simple: take the repetitive work off your team's plate — without forcing you into rigid packages or unnecessary complexity.</p>
+        <p data-i18n="mission_p2">By simplifying complex tasks, we free your most valuable resource: human attention. Our solutions are designed to integrate naturally into your day — not disrupt it. Your team moves faster because the busywork runs itself.</p>
+        <p data-i18n="mission_p3">Every proposal we make is based on a real understanding of your business. Every price we quote reflects the actual scope of your project. No surprises.</p>
+        <a href="index.html#contact" class="link-reset"><button class="btn-learn-more" style="margin-top:1.5rem" data-i18n="mission_cta">Start the conversation <span class="arrow">→</span></button></a>
       </div>
     </div>
   </section>
 
   <!-- FOUNDER -->
-  <section class="founder-section autoBlur">
-    <div class="section-label"><span class="mono-tag">// THE FOUNDER</span></div>
-    <h2 class="section-title-grad">Behind Automate</h2>
-    <div class="founder-card">
-      <img src="/possible+pictures/UDG_avatar.webp" alt="U. Deniz GELES" class="founder-avatar">
-      <div class="founder-info">
-        <h3>U. Deniz GELES</h3>
-        <span class="mono-tag founder-title">Founder &amp; AI Automation Engineer</span>
-        <p>
-          Automate is a focused, founder-led practice. As the sole engineer and strategist behind every project, U. Deniz GELES brings end-to-end ownership to each engagement — from the initial analysis through to deployment and handover.
-        </p>
-        <p>
-          This structure is intentional. It means you work directly with the person who understands your system, designs your solution, and builds it. No account managers, no handoffs, no communication gaps.
-        </p>
-        <p>
-          With a deep background in AI systems, automation architecture, and practical business software, Deniz founded Automate to bring genuinely useful AI solutions to businesses that are ready to move forward — but don't know where to start.
-        </p>
-        <div class="founder-links">
-          <a href="index.html#contact" class="link-reset"><button class="btn-learn-more">Work with Deniz →</button></a>
-          <a href="blog.html" class="btn-item" style="margin-left:1rem">Read the Blog →</a>
+  <section class="founder-section autoBlur" data-screen-label="Founder">
+    <div class="founder-section-inner">
+      <div class="section-label"><span class="mono-tag" data-i18n="founder_label">// THE FOUNDER</span></div>
+      <h2 class="section-title-grad" style="margin-bottom:0" data-i18n="founder_title">Behind Automate</h2>
+      <div class="founder-card">
+        <img src="possible+pictures/UDG_avatar.webp" alt="U. Deniz GELES, founder of Automate" class="founder-avatar">
+        <div class="founder-info">
+          <h3>U. Deniz GELES</h3>
+          <span class="mono-tag founder-title" data-i18n="founder_role">Founder &amp; AI Automation Engineer</span>
+          <p data-i18n="founder_p1">
+            Automate is a focused, founder-led practice. As the sole engineer and strategist behind every project, U. Deniz GELES brings end-to-end ownership to each engagement — from the initial analysis through to deployment and handover.
+          </p>
+          <p data-i18n="founder_p2">
+            This structure is intentional. It means you work directly with the person who understands your system, designs your solution, and builds it. No account managers, no handoffs, no communication gaps.
+          </p>
+          <p data-i18n="founder_p3">
+            With a deep background in AI systems, automation architecture, and practical business software, Deniz founded Automate to bring genuinely useful AI solutions to businesses that are ready to move forward — but don't know where to start.
+          </p>
+          <div class="founder-links">
+            <a href="index.html#contact" class="link-reset"><button class="btn-learn-more" data-i18n="founder_cta1">Work with Deniz <span class="arrow">→</span></button></a>
+            <a href="blog.html" class="btn-item" data-i18n="founder_cta2">Read the blog <span class="arrow">→</span></a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- VALUES -->
-  <section class="values-section autoBlur">
-    <div class="section-label"><span class="mono-tag">// PRINCIPLES</span></div>
-    <h2 class="section-title-grad">How We Work</h2>
-    <div class="values-grid">
-      <div class="value-card">
-        <div class="value-icon"><i class='bx bx-analyse'></i></div>
-        <h3>Understand First</h3>
-        <p>We never propose a solution before we understand the problem. The analysis phase exists for a reason — rushing it costs everyone time and money.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-icon"><i class='bx bx-receipt'></i></div>
-        <h3>Transparent Pricing</h3>
-        <p>One fixed fee to analyze your system. Then a clear, itemized proposal for the build. You know exactly what you're paying for and why — always.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-icon"><i class='bx bx-user-check'></i></div>
-        <h3>Direct Ownership</h3>
-        <p>You work with the person building your system. No middlemen. No delegation. Decisions are made quickly because communication is direct.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-icon"><i class='bx bx-shield-quarter'></i></div>
-        <h3>Built to Last</h3>
-        <p>Every solution is documented, tested, and handed over so you can own and operate it independently. We don't build systems that keep you dependent on us.</p>
+  <section class="values-section autoBlur" data-screen-label="Principles">
+    <div class="values-inner">
+      <div class="section-label"><span class="mono-tag" data-i18n="values_label">// PRINCIPLES</span></div>
+      <h2 class="section-title-grad" style="margin-bottom:0" data-i18n="values_title">How we work</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon"><i class="bx bx-analyse"></i></div>
+          <h3 data-i18n="val1_t">Understand first</h3>
+          <p data-i18n="val1_d">We never propose a solution before we understand the problem. The analysis phase exists for a reason — rushing it costs everyone time and money.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="bx bx-receipt"></i></div>
+          <h3 data-i18n="val2_t">Transparent pricing</h3>
+          <p data-i18n="val2_d">One fixed fee to analyze your system. Then a clear, itemized proposal for the build. You know exactly what you're paying for and why — always.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="bx bx-user-check"></i></div>
+          <h3 data-i18n="val3_t">Direct ownership</h3>
+          <p data-i18n="val3_d">You work with the person building your system. No middlemen. No delegation. Decisions are made quickly because communication is direct.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="bx bx-shield-quarter"></i></div>
+          <h3 data-i18n="val4_t">Built to last</h3>
+          <p data-i18n="val4_d">Every solution is documented, tested, and handed over so you can own and operate it independently. We don't build systems that keep you dependent on us.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- APPROACH -->
-  <section class="approach-section autoBlur">
+  <section class="approach-section autoBlur" data-screen-label="Pricing approach">
     <div class="approach-inner">
-      <div class="section-label"><span class="mono-tag">// OUR APPROACH TO PRICING</span></div>
-      <h2>No Packages. No Tiers. <span class="gradient-text">Just the Right Price.</span></h2>
+      <div class="section-label"><span class="mono-tag" data-i18n="approach_label">// OUR APPROACH TO PRICING</span></div>
+      <h2 data-i18n="approach_title">No packages. No tiers. <span class="gradient-text">Just the right price.</span></h2>
       <div class="approach-body">
         <div class="approach-step">
-          <div class="approach-num mono-tag">Step 1</div>
+          <div class="approach-num mono-tag" data-i18n="ap1_num">Step 1</div>
           <div class="approach-text">
-            <h4>Free Discovery Call</h4>
-            <p>We start with a free conversation to understand your business, your goals, and whether automation is the right move for you right now. No pressure, no pitch.</p>
+            <h4 data-i18n="ap1_t">Free discovery call</h4>
+            <p data-i18n="ap1_d">We start with a free conversation to understand your business, your goals, and whether automation is the right move for you right now. No pressure, no pitch.</p>
           </div>
         </div>
         <div class="approach-step">
-          <div class="approach-num mono-tag">Step 2</div>
+          <div class="approach-num mono-tag" data-i18n="ap2_num">Step 2</div>
           <div class="approach-text">
-            <h4>One-Time Analysis Fee</h4>
-            <p>If we decide to move forward, you pay a single flat fee for a deep-dive analysis of your systems and workflows. This is the foundation that makes everything else precise and honest.</p>
+            <h4 data-i18n="ap2_t">One-time analysis fee (£500–£1,500)</h4>
+            <p data-i18n="ap2_d">If we decide to move forward, you pay a single flat fee for a deep-dive analysis of your systems and workflows. This is the foundation that makes everything else precise and honest.</p>
           </div>
         </div>
         <div class="approach-step">
-          <div class="approach-num mono-tag">Step 3</div>
+          <div class="approach-num mono-tag" data-i18n="ap3_num">Step 3</div>
           <div class="approach-text">
-            <h4>Custom Project Proposal</h4>
-            <p>Based on the analysis, you receive a fully scoped proposal with a price built around your project's actual size, complexity, and requirements. Not a price list. A real quote.</p>
+            <h4 data-i18n="ap3_t">Custom project proposal</h4>
+            <p data-i18n="ap3_d">Based on the analysis, you receive a fully scoped proposal with a price built around your project's actual size, complexity, and requirements. Not a price list. A real quote.</p>
           </div>
         </div>
       </div>
-      <div style="text-align:center; margin-top:3rem;">
-        <a href="index.html#contact" class="link-reset"><button class="btn-hero-sgn">Book Your Free Discovery Call</button></a>
+      <div class="approach-cta">
+        <a href="index.html#contact" class="link-reset"><button class="btn-hero-sgn" data-i18n="book_discovery">Book your free discovery call</button></a>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="about-cta autoBlur">
+  <section class="about-cta autoBlur" data-screen-label="About CTA">
     <div class="cta-box">
-      <h2>Ready to automate your business?</h2>
-      <p>The first step is just a conversation. No commitment, no sales deck — just an honest look at how automation can help you.</p>
+      <h2 data-i18n="cta_title">Ready to automate your business?</h2>
+      <p data-i18n="cta_sub">The first step is just a conversation. No commitment, no sales deck — just an honest look at how automation can help you.</p>
       <div class="cta-btns">
-        <a href="index.html#contact" class="link-reset"><button class="btn-hero-sgn">Get in Touch</button></a>
-        <a href="products.html" class="link-reset"><button class="btn-hero-build-AI">See What We Build ↗</button></a>
+        <a href="index.html#contact" class="link-reset"><button class="btn-hero-sgn" data-i18n="cta_b1">Get in touch</button></a>
+        <a href="products.html" class="link-reset"><button class="btn-hero-build-AI" data-i18n="hero_cta_secondary">See what we build ↗</button></a>
       </div>
     </div>
   </section>
@@ -199,44 +204,59 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <h2 class="logo">Automate</h2>
-        <p>Custom AI automation for ambitious businesses.</p>
+        <p data-i18n="footer_tagline">Custom AI automation for ambitious businesses.</p>
       </div>
       <div class="footer-links">
         <div class="footer-col">
-          <span class="footer-col-title">Solutions</span>
-          <a href="products.html">All Products</a>
-          <a href="products.html#content">Content &amp; Media</a>
-          <a href="products.html#intelligence">Intelligence &amp; Security</a>
-          <a href="products.html#operations">Operations &amp; Finance</a>
+          <span class="footer-col-title" data-i18n="footer_col_solutions">Solutions</span>
+          <a href="products.html" data-i18n="footer_all_solutions">All solutions</a>
+          <a href="products.html#content" data-i18n="footer_content">Content &amp; media</a>
+          <a href="products.html#intelligence" data-i18n="footer_intelligence">Intelligence &amp; security</a>
+          <a href="products.html#operations" data-i18n="footer_operations">Operations &amp; finance</a>
         </div>
         <div class="footer-col">
-          <span class="footer-col-title">Company</span>
-          <a href="about.html">About</a>
-          <a href="blog.html">Blog</a>
-          <a href="index.html#contact">Contact</a>
+          <span class="footer-col-title" data-i18n="footer_col_company">Company</span>
+          <a href="about.html" data-i18n="footer_about">About</a>
+          <a href="blog.html" data-i18n="footer_blog">Blog</a>
+          <a href="index.html#contact" data-i18n="footer_contact">Contact</a>
         </div>
         <div class="footer-col">
-          <span class="footer-col-title">Legal</span>
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="terms.html">Terms of Service</a>
+          <span class="footer-col-title" data-i18n="footer_col_legal">Legal</span>
+          <a href="privacy.html" data-i18n="footer_privacy">Privacy policy</a>
+          <a href="terms.html" data-i18n="footer_terms">Terms of service</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© AutomateDev 2026. All rights reserved.</p>
+      <p data-i18n="footer_copyright">© AutomateDev 2026. All rights reserved.</p>
       <div class="Social">
-        <a href="https://www.linkedin.com/company/automatedev/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" style="color:#d107d1"></i></a>
-        <a href="https://x.com/a_mate_dev" aria-label="X"><i class="fa-brands fa-x-twitter" style="color:#d107d1"></i></a>
-        <a href="https://t.me/a_mate_dev" aria-label="Telegram"><i class="fa-brands fa-telegram" style="color:#d107d1"></i></a>
-        <a href="https://www.instagram.com/amate_dev/" aria-label="Instagram"><i class="fa-brands fa-instagram" style="color:#d107d1"></i></a>
-        <a href="https://www.tiktok.com/@amate.dev" aria-label="TikTok"><i class="fa-brands fa-tiktok" style="color:#d107d1"></i></a>
-        <a href="https://www.youtube.com/channel/UCJuZM9lDoQ2gtKn5X4FOQSQ" aria-label="YouTube"><i class="fa-brands fa-youtube" style="color:#d107d1"></i></a>
+        <a href="https://www.linkedin.com/company/automatedev/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://x.com/a_mate_dev" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://t.me/a_mate_dev" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://www.instagram.com/amate_dev/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@amate.dev" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.youtube.com/channel/UCJuZM9lDoQ2gtKn5X4FOQSQ" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
       </div>
     </div>
   </footer>
 
-  <script type="module" src="script.js"></script>
-
-  <script src="cookie-consent.js"></script>
+  <script src="translations.js?v=10"></script>
+  <script src="translations-fr.js?v=10"></script>
+  <script src="translations-es.js?v=10"></script>
+  <script src="translations-it.js?v=10"></script>
+  <script src="translations-tr.js?v=10"></script>
+  <script src="i18n.js?v=10"></script>
+  <script type="module" src="script.js?v=10"></script>
+  <script src="cookie-consent.js?v=10"></script>
+  <script>
+    /* Safety net: if the reveal engine never ran (e.g. script.js failed to load),
+       ensure no content stays hidden behind the entrance animation. */
+    setTimeout(function () {
+      if (window.__revealReady) return;
+      document.querySelectorAll('.autoBlur, .reveal').forEach(function (el) {
+        el.style.transition = 'none'; el.style.opacity = '1'; el.style.transform = 'none'; el.style.filter = 'none';
+      });
+    }, 1600);
+  </script>
 </body>
 </html>
