@@ -8,3 +8,10 @@ Thumbs.db
 
 # Dependencies (not used by this static site, but ignore just in case)
 node_modules/
+
+# Wrangler / Cloudflare local files and secrets
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
