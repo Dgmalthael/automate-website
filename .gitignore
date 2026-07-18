@@ -1,0 +1,10 @@
+# Local full clone of the Three.js library (site loads Three.js from CDN instead)
+three.js/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.log
+
+# Dependencies (not used by this static site, but ignore just in case)
+node_modules/
